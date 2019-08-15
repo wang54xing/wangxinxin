@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC  
+        "-//mybatis.org//DTD Mapper 3.0//EN"  
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sql.dao.RefactorMapper">
+
+
+    <select id="selUserInfoByUserId" resultType="com.sql.oldDataPojo.UserInfo">
+        select id,
+        userName,
+        birthDate,
+        sex,
+        nickName,
+        role,
+        email,
+        mobileNumber,
+        phoneNumber,
+        qq,
+        address,
+        postCode,
+        bloodType,
+        password,
+        registerTime,
+        level,
+        credit,
+        imageURL,
+        currentSchoolId as schoolId,
+        balance,
+        detail,
+        lastActiveDate,
+        studentid,
+        initialized,
+        maxImageURL,
+        middleImageURL,
+        minImageURL,
+        experiencevalue,
+        bloglogintime,
+        petname,
+        ismanage,
+        chatAccount,
+        isk6kt,
+        studentNum
+         from users where
+        currentSchoolId = 211 OR currentSchoolId = 232 OR currentSchoolId &gt; 459
+        limit #{offset}, #{length}
+    </select>
+
+    <select id="selHeadmasterWithClass" resultType="Integer">
+        SELECT distinct u.id
+        FROM(users u left join teachers t on u.id= t.userId) inner join classsubjects re on t.id= re.teacherId
+        where u.role= 2
+    </select>
+
+    <select id="selSchool" resultType="com.sql.oldDataPojo.SchoolInfo">
+        select * from schools where id = 211 OR id = 232 OR id &gt; 459
+    </select>
+
+    <select id="selGeo" resultType="com.sql.oldDataPojo.GeoInfo">
+        select * from geos
+    </select>
+
+    <select id="selGrade" resultType="com.sql.oldDataPojo.GradeInfo">
+        SELECT
+            g.id as id,
+            g.schoolId,
+            g.gradeId as typeId,
+            g.gradeName,
+            t.userid
+            FROM (grades g left join
+            refgradeteacher re
+            on g.id=re.gradeId)
+            left join teachers t on
+            t.id=re.teacherId
+            order by g.schoolId
+    </select>
+    <select id="selSubject" resultType="com.sql.oldDataPojo.SubjectInfo">
+        SELECT s.id as subjectId,r.gradeId as gradeId,s.schoolId,s.name
+        FROM schoolsubjects s ,refgradesubject r
+        where s.id = r.subjectId order by schoolid,subjectId
+    </select>
+
+    <select id ="getRefTeacherClass" resultType="com.sql.oldDataPojo.RefUserClassesInfo">
+        SELECT
+        c.classid as classId,
+        t.userid as userId
+        FROM classsubjects c ,teachers t
+        where t.id = c.teacherId
+        order by classId;
+    </select>
+
+
+
+    <select id="getClassInfo" resultType="com.sql.oldDataPojo.ClassesInfo">
+        select
+            id as id,
+            schoolid as schoolId,
+            gradeId as gradeId,
+            classname as className,
+            classcontent as classDetail,
+            classtype as cty
+        from classes where classtype = 1
+    </select>
+
+    <select id="getRefUserClassesInfo" resultType="com.sql.oldDataPojo.RefUserClassesInfo">
+        SELECT
+         r.classid as classId,
+         r.userid as userId
+        FROM
+         refuserclass r
+    </select>
+
+    <select id="getRefClassMasterInfo" resultType="com.sql.oldDataPojo.RefUserClassesInfo">
+        SELECT DISTINCT
+         r.classid as classId,
+         t.userid as userId
+        FROM
+         refclassteacher r,
+         teachers t
+        where r.teacherId=t.id
+        and t.userid is not null
+    </select>
+
+    <select id="getCloudLessonInfo" resultType="com.sql.oldDataPojo.CloudLessonInfo">
+        SELECT
+         cuo.id as id,
+         cuo.courseName as lessonName,
+         cuo.courseContent as lessonContent,
+         tea.userid as teacherId,
+         cuo.imageUrl as imageUrl,
+         cuo.videoId as videoId,
+         cuo.subjectId as subjectId
+        FROM courses cuo
+        LEFT JOIN teachers tea
+         ON cuo.teacherId=tea.id
+        WHERE
+        cuo.deleteFlag = 0
+        and cuo.toCloud = 1
+        and cuo.passFlag = 1
+        and cuo.subjectId is not NULL
+        and cuo.subjectId &gt;30
+    </select>
+
+    <select id="getCloudLessonGradeId" resultType="Integer">
+        SELECT
+        gradeId
+        FROM refcoursegrade
+        WHERE
+        courseId = #{courseId}
+    </select>
+
+    <select id="getCloudLessonTypeId" resultType="Integer">
+        SELECT
+        examOutlineId
+        FROM refcourseexamoutline
+        WHERE
+        courseId = #{courseId}
+    </select>
+
+    <select id="getRefParentStudent" resultType="com.sql.oldDataPojo.RefParentStudent">
+        SELECT * FROM refparentstudent
+    </select>
+
+    <select id="getCloudLessonTypeInfo" resultType="com.sql.oldDataPojo.CloudLessonTypeInfo">
+        select
+            id,
+            CASE
+                WHEN gradeId &gt; 10 and gradeId &lt; 17 THEN 2
+                WHEN gradeId &gt; 20 and gradeId &lt; 24 THEN 4
+                WHEN gradeId &gt; 30 and gradeId &lt; 34 THEN 8
+            END schoolType,
+            gradeId,
+            subjectId,
+            chapter,
+            description
+        from examoutlines
+    </select>
+
+
+    <select id="selDir" resultType="com.sql.oldDataPojo.DirInfo">
+        select * from dir
+    </select>
+    <select id="selTeacher" resultType="com.sql.oldDataPojo.TeacherInfo">
+        select id,userid from teachers
+        where (schoolId = 211 OR schoolId = 232 OR schoolId &gt; 459)
+        AND not userid is null
+    </select>
+
+    <select id="getVideoInfo" resultType="com.sql.oldDataPojo.VideoInfo">
+        select
+         id,name,uploadDate,
+         length,imageUrl,uploadState,videoType,
+         deleteFlag,temporaryName,videoNum,
+         bucketkey,
+         persistentId,
+         videoSourceType
+        from videos
+    </select>
+
+    <select id="selTeacherClassSubject" resultType="com.sql.oldDataPojo.TeacherClassLessonInfo">
+        select * from classsubjects
+    </select>
+
+    <select id="selWordExercise" resultType="com.sql.oldDataPojo.WordExerciseInfo">
+        select * from wordexercise
+    </select>
+
+    <select id="selRefWordlClassInfo" resultType="com.sql.oldDataPojo.RefWordClassInfo">
+        select * from refwordclass order by wordId
+    </select>
+
+    <select id="selWordExerciseSubmit" resultType="com.sql.oldDataPojo.WordExerciseSubmitInfo">
+        SELECT wordExerciseId as wordId,
+        count(distinct userId) as submit
+        FROM wordexerciseanswer group by wordExerciseId
+    </select>
+
+    <select id="selLessonInfo" resultType="com.sql.oldDataPojo.LessonInfo">
+        SELECT l.id,courseName,courseContent,
+        imageUrl,r.dirId,createtime,isFromCloud
+        FROM lessons l , reflessondir r
+        where l.id = r.lessonId and l.deleteFlag = 0
+        ORDER by l.id
+    </select>
+
+    <select id="getUserPetInfo" resultType="com.sql.oldDataPojo.UserPetInfo">
+        SELECT
+            up.*,
+            p.petexplain,
+            p.petimage,
+            p.minpetimage,
+            p.maxpetimage,
+            p.middlepetimage
+        FROM
+            userpet up
+        LEFT JOIN pet p ON p.id = up.petid
+    </select>
+
+    <select id="getPetTypeInfo" resultType="com.sql.oldDataPojo.PetInfo">
+        SELECT
+          *
+        FROM pet
+    </select>
+    
+    <select id="selRefLessonVideos" resultType="com.sql.oldDataPojo.RefLessonVideos">
+        select * from reflessonvideos order by lessonId
+    </select>
+    
+    <select id="seleLessonCourseWareInfo" resultType="com.sql.oldDataPojo.LessonCourseWareInfo">
+        select * from lessoncourseware order by lessonId
+    </select>
+
+    <select id="getUserScoreLogsInfo" resultType="com.sql.oldDataPojo.ExperienceLogInfo">
+        select
+            userid as userid,
+            scorename as experiencename,
+            score as experience,
+            createtime as createtime,
+            createtime as experiencetime,
+            scoretype as experiencetype,
+            relationid as relateId
+        from scorelogs
+    </select>
+
+    <select id="selLetterInfo" resultType="com.sql.oldDataPojo.LetterInfo">
+        select * from privateletter order by id DESC
+    </select>
+
+    <select id="selExerciseBigQuest" resultType="com.sql.oldDataPojo.WordExerciseBigQuestInfo">
+        select * from wordexercisequest where type = 1
+    </select>
+    <select id="selExerciseSmallQuest" resultType="com.sql.oldDataPojo.WordExerciseSmallQuestInfo">
+        select * from wordexercisequest where not type = 1 order by bigQuestId
+    </select>
+
+    <select id="selExerciseAnswer" resultType="com.sql.oldDataPojo.WordExerciseAnswerInfo">
+        select * from wordexerciseanswer order by questId,userId,score desc
+    </select>
+
+    <select id="getMicroBlogInfo" resultType="com.sql.oldDataPojo.MicroBlogInfo">
+        select
+        fmb.*,
+        u.schoolid AS schoolId,
+        u.userName as nickname
+        from fzmicroblog fmb
+        inner join users u on fmb.userid = u.id
+    </select>
+
+    <select id="getReplyCommentInfo" resultType="com.sql.oldDataPojo.ReplyCommentInfo">
+        select
+         frc.* ,
+         u.schoolid AS schoolId,
+         u.userName as nickname
+        from fzreplycomment frc
+        inner join users u on u.id=frc.buserid
+    </select>
+
+    <select id="getMicroBlogZanLogsInfo" resultType="com.sql.oldDataPojo.MicroBlogZanLogsInfo">
+        select * from fzmicroblogzanlogs
+    </select>
+
+    <select id="getBlogPicInfo" resultType="com.sql.oldDataPojo.BlogPicInfo">
+        select * from fzblogpic
+    </select>
+
+    <select id="getIntrestClassInfo" resultType="com.sql.oldDataPojo.InterestClassInfo">
+        SELECT
+            l.id,
+            classname,
+            classcontent,
+            schoolid,
+            actualcount,
+            classtime,
+            teacherId,
+            gradeId,
+            opentime,
+            closetime,
+            firstteam,
+            secondteam,
+            gradeArry,
+            coursetype,
+            isopen,
+            termType,
+            studentcount,
+            subjectId
+      FROM classes l left join classsubjects cs on l.id = cs.classId
+      where classtype = 2;
+    </select>
+
+    <select id="getGradeMasterList" resultType="Integer">
+        select
+         us.id as userid
+        from refgradeteacher ref
+        INNER join teachers tea
+        on tea.id=ref.teacherId
+        INNER JOIN
+        users us on tea.userid=us.id
+    </select>
+
+    <select id="getHomeworkInfo" resultType="com.sql.oldDataPojo.MesgInfo">
+        SELECT * FROM fzmymessage where mesgtype = 2 and delflg=0
+    </select>
+
+    <select id="getHomeworkSubmitInfo" resultType="com.sql.oldDataPojo.MsgReplyInfo">
+        SELECT * FROM fzmesgreply fz, refmesgclass ref where mesgid = messageid order by mesgid
+    </select>
+
+    <select id="getHomeworkAttachInfo" resultType="com.sql.oldDataPojo.MsgAttachInfo">
+        SELECT * FROM fzattachment where messageid >0 and mesgreplyid=0 order by messageid
+    </select>
+
+    <select id="getHomeworkVoiceInfo" resultType="com.sql.oldDataPojo.MsgVoiceInfo">
+        SELECT * FROM fzvoice where mesgid >0 and mesgreplyid=0 order by mesgid
+    </select>
+    <select id="getRefMesgclass" resultType="com.sql.oldDataPojo.RefMesgclass">
+        SELECT * FROM refmesgclass order by messageid
+    </select>
+
+    <select id="getHomeworkSubmitVoiceInfo" resultType="com.sql.oldDataPojo.MsgVoiceInfo">
+        SELECT * FROM fzvoice where mesgid>0 and mesgreplyid > 0 order by mesgid
+    </select>
+
+    <select id="getHomeworkSubmitAttachInfo" resultType="com.sql.oldDataPojo.MsgAttachInfo">
+        SELECT * FROM fzattachment where messageid >0 and mesgreplyid>0 order by messageid
+    </select>
+
+    <select id="getNoticeInfo" resultType="com.sql.oldDataPojo.MesgInfo">
+        SELECT * FROM fzmymessage where mesgtype = 1 and delflg=0
+    </select>
+
+
+    <select id="getActivityInfo" resultType="com.sql.oldDataPojo.ActivityInfo">
+        SELECT * FROM activity
+    </select>
+    <select id="getActivityDiscussInfo" resultType="com.sql.oldDataPojo.ActivityDiscussInfo">
+        SELECT * FROM activitydiscuss ORDER by actId
+    </select>
+
+    <select id="getActivityAttendInfo" resultType="com.sql.oldDataPojo.ActivityAttendInfo">
+        SELECT * FROM actattend ORDER by activityId
+    </select>
+
+    <select id="getActivityImageCountInfo" resultType="com.sql.oldDataPojo.ActivityImageCountInfo">
+        SELECT actId,count(*) as imc FROM activitydiscuss
+        where image like '%upload%' group by actId
+    </select>
+
+
+    <select id="getActivityTrackInfo" resultType="com.sql.oldDataPojo.ActivityTrackInfo">
+        SELECT * from acttrack
+    </select>
+    <select id="getActivityInvitationInfo" resultType="com.sql.oldDataPojo.ActivityInvitationInfo">
+        SELECT * from actinvitation
+    </select>
+
+    <select id="getFriendInfo" resultType="com.sql.oldDataPojo.FriendInfo">
+        SELECT * from friend
+    </select>
+    <select id="getFriendApplyInfo" resultType="com.sql.oldDataPojo.FriendApplyInfo">
+        SELECT * from friendapply
+    </select>
+
+
+    <select id="getSchoolLeagueInfo" resultType="com.sql.oldDataPojo.SchoolLeagueInfo">
+        SELECT schoolId, rs.leagueId, name, userId FROM refschoolleague rs
+        left join schoolleague sl on rs.leagueId=sl.id
+        left join refleaguemanager re on rs.leagueId = re.leagueId
+        order by rs.leagueId
+    </select>
+
+
+    <select id="getGroupInfo" resultType="com.sql.oldDataPojo.GroupInfo">
+        SELECT * from groups where delflg = 0
+    </select>
+    <select id="getGroupChatInfo" resultType="com.sql.oldDataPojo.GroupChatInfo">
+        SELECT * from groupchat ORDER by roomid
+    </select>
+    <select id="getGroupFileInfo" resultType="com.sql.oldDataPojo.GroupFileInfo">
+        SELECT * from groupfile where delflg = 0 ORDER by roomid
+    </select>
+    <select id="getGroupUserInfo" resultType="com.sql.oldDataPojo.RefGroupUser">
+        SELECT * from refgroupuser ORDER by roomid
+    </select>
+
+
+    <select id="getInterestClassScoreInfo" resultType="com.sql.oldDataPojo.InterestClassLessonScoreInfo">
+        SELECT * from lessonscore
+    </select>
+
+    <select id="getInterestClassTranscriptInfo" resultType="com.sql.oldDataPojo.InterestClassTranscriptInfo">
+        SELECT * from transcript
+    </select>
+
+    <select id="getVideoViewInfo" resultType="com.sql.oldDataPojo.VideoViewInfo">
+        SELECT courseId,
+       userID,
+       userName,
+       playTime,
+       playVideo,
+       endViewType,
+       co.videoId
+  FROM courselogs c left join courses co on courseId= co.id
+    </select>
+
+    <select id="getLessonComment" resultType="com.sql.oldDataPojo.LessonCommentInfo">
+        SELECT * FROM comment order by outId
+    </select>
+
+    <select id="getItemPool1" resultType="com.sql.oldDataPojo.ItemPoolInfo">
+        select
+        Tid,
+        教材目录节点 as booknode,
+        学段 as period,
+        学科 as subject,
+        版本 as bookedition,
+        年级 as grade,
+        教材 as bookgrade,
+        单元 as unit,
+        课 as lesson,
+        难度 as difficulty,
+        题型 as itemtype,
+        知识点编号 as knowledgePointId,
+        知识点名称 as knowledgePointName,
+        知识面编号 as knowledgeAreaId,
+        知识面名称 as knowledgeAreaName,
+        分值 as point,
+        客观题 as objective,
+        客观题答案 as objectiveanswer,
+        组选个数 as answercount,
+        选项个数 as selectcount,
+        命题 as itemcontent,
+        答案 as answer
+        from 试题表20150814
+    </select>
+
+    <select id="getItemPool2" resultType="com.sql.oldDataPojo.ItemPoolInfo">
+        select
+        Tid,
+        教材目录节点 as booknode,
+        学段 as period,
+        学科 as subject,
+        版本 as bookedition,
+        年级 as grade,
+        教材 as bookgrade,
+        单元 as unit,
+        课 as lesson,
+        难度 as difficulty,
+        题型 as itemtype,
+        知识点编号 as knowledgePointId,
+        知识点名称 as knowledgePointName,
+        知识面编号 as knowledgeAreaId,
+        知识面名称 as knowledgeAreaName,
+        分值 as point,
+        客观题 as objective,
+        客观题答案 as objectiveanswer,
+        组选个数 as answercount,
+        选项个数 as selectcount,
+        命题 as itemcontent,
+        答案 as answer
+        from 小学题库
+    </select>
+  
+    
+    
+    
+    
+    <select id="getItemPool3" resultType="com.sql.oldDataPojo.ItemPoolInfo">
+ select
+        Tid,
+        学科 as subject,
+        教材 as bookedition,
+学期  as grade,
+        难度 as difficulty,
+        题型 as itemtype,
+        单知识点编号 as knowledgePointId,
+        单知识点名称 as knowledgePointName,
+        知识面编号 as knowledgeAreaId,
+        知识面名称 as knowledgeAreaName,
+        分值 as point,
+        客观题 as objective,
+        客观题答案 as objectiveanswer,
+        组选个数 as answercount,
+        选项个数 as selectcount,
+        命题 as itemcontent,
+        答案 as answer,
+       单元 as danyuan ,
+   单知识点编号 as singleKw
+        from 试题表;
+    </select>
+    
+    <select id="getEmarketLesson" resultType="com.sql.oldDataPojo.EmarketLessonInfo">
+    select distinct l.*,v.videoType,d.owner
+	from
+	lessons l
+	inner join dir d on l.dirId = d.id
+	left join reflessonsubject rls on rls.lessonId = l.id
+	left join reflessongrade rlg ON l.id = rlg.lessonId
+    left join reflessonexamoutline rle ON rle.lessonId = l.id
+    left join videos v on l.videoId = v.id
+	where d.type = 4
+	and l.deleteFlag = 0
+    </select>
+
+
+    <select id="getRefLessonGrade" resultType="com.sql.oldDataPojo.RefLessonGradeInfo">
+        select * from reflessongrade
+    </select>
+
+    <select id="getRefLessonSubject" resultType="com.sql.oldDataPojo.RefLessonSubjectInfo">
+        select * from reflessonsubject
+    </select>
+
+    <insert id="insertUserBalance" >
+        insert into userbalance(username, password, balance, userid)
+        values(#{username},#{password},#{balance},#{userId})
+    </insert>
+
+    <select id="getResouceDicInfo" resultType="com.sql.oldDataPojo.ResourceKPDicInfo">
+        select
+        学段学科 as category,
+        知识点编号 as code,
+        知识点 as klpoint
+        from 复兰知识点对应 order by code
+    </select>
+
+    <select id="getResouceDicInfo2" resultType="com.sql.oldDataPojo.ResourceKPDicInfo">
+        select
+        节点 as code,
+        节点名称 as klpoint
+        from 目录树表 order by code
+    </select>
+</mapper>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册商城账号</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
+</head>
+<body>
+<div class="login-bar" style="margin: 0 auto;">
+    <div class='title-bar-container' style="height:80px;overflow: hidden">
+        <img class="title-logo" src="/img/K6KT/main-page/ebusiness-logo.png">
+        <!--申请试用-->
+        <a class="login-password" href="javascript:;">找回密码</a>
+        <a class="login-btn" href="javascript:;">登 录</a>
+            <span id="veryCodeSpan" style="display: none" class="very-code">
+                <input id="veryCode" class="input-verycode" name="veryCode" type="text"/>
+                <img id="imgObj" alt="" src=""/>
+                <a href="javascript:;" onclick="changeImg()">看不清楚？换一张</a>
+            </span>
+        <input id="input-first" class="input-password" type="password" placeholder="密码" tabindex="2">
+        <input id="input-last" class="input-account" type="text" placeholder="用户名" tabindex="1" value="<%=userName%>">
+
+
+
+        <div id="tips-msg">
+            <span class="verycode-error"></span>
+            <span class="password-error">密码错误</span>
+            <span class="username-error">用户名不存在</span>
+        </div>
+    </div>
+</div>
+<!--=================头部================-->
+<div class="store-home-top">
+    <div class="store-top-center">
+        <a href="http://www.fulaan.com" class="store-top-SCSY">商城首页</a>
+        <a href="">Home&gt;用户注册</a>
+        <div>
+            <a href="cart.html">
+                <em>我的购物车</em><i>（3件商品）</i>
+            </a>
+        </div>
+    </div>
+</div>
+<!--======================注册=============================-->
+<div class="register-main">
+    <dl>
+        <dt>
+            <h1>注册商城账号</h1><span>已有账号，<a href="javascript:;">马上登录</a>！</span>
+        </dt>
+        <dd>
+            <h1>注册复兰商城账号，购买正品精品！</h1>
+        </dd>
+        <dd>
+            <em>用户名：</em><input class="register-right">
+            <span>6-20位字符，支持汉字、字母、数字</span>
+            <span class="register-ZC">用户名不能是纯数字，请重新输入</span>
+            <span class="register-ZC">该用户名已被使用，请重新输入。如果您是该用户，请立即<a>登录</a></span>
+        </dd>
+        <dd>
+            <em>设置密码：</em><input class="register-wrong">
+            <span>改密码比较简单，建议您更改为复杂密码，如“字母+数字”的组合</span>
+            <span class="register-ZC">密码长度只能在6-20位字符之间</span>
+            <span class="register-ZC">密码比较简单，建议您更改为复杂密码</span>
+        </dd>
+        <dd>
+            <em>确认密码：</em><input>
+            <span class="register-ZC">两次输入密码不一致</span>
+        </dd>
+        <dd>
+            <em>验证手机：</em><input>
+            <span>完成验证后，您可以用该手机号登录和找回密码</span>
+            <span class="register-ZC">请输入正确的手机号码</span>
+        </dd>
+        <dd>
+            <em>手机验证码：</em><input class="register-YZ"><button class="register-HQ">点击获取</button>
+        </dd>
+        <dd>
+            <em></em><input type="radio" class="register-TY">我同意《复兰商城协议》
+        </dd>
+        <dd>
+            <em></em><button class="register-LJ">立即注册</button>
+        </dd>
+    </dl>
+</div>
+<!--=============底部版权=================-->
+<div class="store-foott">
+    <div class="store-foott-main">
+        <div class="store-foott-left">
+            <span>版权所有：上海复兰信息科技有限公司</span><a target="_blank" href="http://www.fulaan-tech.com">www.fulaan-tech.com</a>
+                   <span>
+                       <a href="/aboutus/k6kt">关于我们</a>
+                       <a href="/contactus/k6kt">联系我们</a>
+                       <a href="/service/k6kt">服务条款 </a>
+                       <a href="/privacy/k6kt">隐私保护 </a>
+                       <a href='http://wpa.qq.com/msgrd?v=1&uin=2803728882&site=qq&menu=yes' target="_blank">在线客服</a>
+                   </span>
+            <span>沪ICP备14004857号</span>
+        </div>
+        <div class="store-foott-right">
+            <div>
+                <img src="/img/K6KT/main-page/store-phone.png">
+                    <span>
+                        <i>关注我们：</i>
+                        <a target="_blank" href='http://weibo.com/FulaanTechnology'><img src="/img/K6KT/main-page/store-WEB.png"></a>
+                        <a target="_blank" href='http://t.qq.com/FulaanTechnology'><img src="/img/K6KT/main-page/store-WEBI.png"></a>
+                        <a><img src="/img/K6KT/main-page/store-WEX.png"></a>
+                    </span>
+            </div>
+            <img src="/img/K6KT/main-page/store-WEII.jpg">
+        </div>
+    </div>
+</div>
+</body>
+</html>

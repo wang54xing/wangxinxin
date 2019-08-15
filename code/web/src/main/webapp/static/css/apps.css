@@ -1,0 +1,134 @@
+body {
+    font-family: 'microsoft YaHei';
+}
+.main-container div{
+    overflow: visible;
+}
+.index-title-bar {
+    background-color: #EEF3EF;
+    height: 34px;
+    box-shadow: 0px 2px 5px #9E9E9E;
+    position: relative;
+    z-index: 500;
+}
+#footer {
+     background-color: #F3F3F3;
+     color: #7A7A7A;
+ }
+#footer a{
+    color: #7A7A7A;
+}
+#footer div{
+    width: 1000px;
+}
+.title-bar-container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+.company-name {
+    float: left;
+    font-weight: bold;
+    color: #808281;
+    line-height: 34px;
+    width: 150px;
+    text-align: center;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.company-phone {
+    float: right;
+    color: #808281;
+    line-height: 34px;
+    width: 110px;
+    text-align: center;
+    border-right: 1px solid lightgray;
+}
+
+.company-phone a {
+    color: #808281;
+}
+.company-phone a:hover {
+    color: lightskyblue;
+}
+
+.guanzhu {
+    float: right;
+    color: #808281;
+    line-height: 34px;
+    margin-left: 20px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    width: 180px;
+    text-align: center;
+}
+
+.main-container {
+    background: url(/img/down-bg.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden!important;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/down-bg.jpg',sizingMethod='scale');
+}
+.content-container{
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    line-height: normal;
+    color : white;
+    position: relative;
+}
+.content-container p{
+    line-height: 20px;
+}
+
+.left-container div {
+    margin : 40px 0;
+}
+
+.right-container{
+    position: absolute;
+    right: -140px;
+}
+
+.left-container {
+    width: 500px;
+}
+
+.index-title{
+    font-size: 40pt;
+}
+
+.button-AppStore {
+    background-image: url('/img/K6KT/app-button.png');
+
+}
+
+.button-Android {
+    background: url('/img/K6KT/app-button.png') no-repeat -209px 0;
+    margin-left: 20px;
+}
+
+.app-btn {
+    width: 187px;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 20px;
+    text-shadow: black 2px 2px 2px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.qrcode-div {
+    margin-left: 20px !important;
+    font-size: 12px;
+}
+
+.main-container a {
+    color: white;
+}

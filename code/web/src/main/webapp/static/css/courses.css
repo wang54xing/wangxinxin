@@ -1,0 +1,223 @@
+div {
+    overflow: inherit;
+}
+.content-container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: table;
+    font-family: 'microsoft YaHei';
+    font-size: 15px;
+}
+.left-container {
+    float: left;
+    margin:30px 40px 30px 20px;
+}
+.right-container {
+    float: left;
+    margin: 30px 20px 30px 30px;
+}
+.select-course-container,
+.recent-buy-container {
+    width: 160px;
+}
+.select-course-title {
+    background-color: #4A9ECD;
+    padding: 10px 20px;
+    width:100%;
+    border:1px solid #E2E2E2;
+    color: #fff;
+    font-weight: bold;
+}
+.course-ul,.buy-ul {
+    padding: 0px 20px;
+    width: 100%;
+    border-left:1px solid #e2e2e2;
+    border-bottom:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+}
+.course-ul >li {
+    padding: 5px 0px;
+    border-top:1px dotted #e2e2e2;
+    color: #6D6D6D;
+    font-size: 14px;
+    cursor: pointer;
+}
+.course-ul >li.active a{
+    color: #4B9FCD;
+}
+.course-ul >li:hover a{
+    color: #f80;
+}
+.recent-buy-title {
+    background-color: #FF9600;
+    padding: 10px 20px;
+    width:100%;
+    border:1px solid #E2E2E2;
+    color: #fff;
+    font-weight: bold;
+}
+.buy-ul {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0px 20px 18px 20px;
+}
+.buy-ul>li {
+    margin-top: 18px;
+    display: inline-block;
+}
+.buy-detail {
+    float:left;
+    width:109px;
+}
+li .buy-img {
+    height: 42px;
+    width: 42px;
+    float: left;
+    margin-right: 9px;
+}
+li .buy-title {
+    padding-bottom: 5px;
+    border-bottom:1px dotted #BCBCBC;
+    overflow: hidden;
+    height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+li .buy-content {
+    margin-top: 5px;
+    color: #FF9600;
+    overflow: hidden;
+    height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*右侧最新视频*/
+.new-course {
+    display: inline-block;
+}
+.new-course-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.new-course-img {
+    width: 360px;
+    height: 219px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+.new-course-img >img {
+    width: 100%;
+    height: 100%;
+}
+.new-course-img:last-child {
+    margin-right: 0px;
+}
+.filter-bg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    opacity: 0.5;
+    display: none;
+}
+.new-course-content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 331px;
+    height: 80px;
+    padding: 5px 15px;
+    color: #fff;
+    line-height: 26px;
+    display: none;
+}
+.new-course-play {
+    bottom: 14px;
+    right: 23px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+    cursor: pointer;
+}
+/*课程*/
+.subject-container {
+    margin-top: 30px;
+    display: table;
+}
+.subject-title-bar {
+    margin-bottom: 20px;
+}
+.subject-title-bar span {
+    font-size: 18px;
+}
+.subject-title-bar a {
+    color: #FF6400;
+    font-size: 14px;
+}
+.subject-course-container {
+    width: 177px;
+    margin-right: 7px;
+    float: left;
+    line-height: 21px;
+}
+.subject-course-container:last-child {
+    margin-right: 0px;
+}
+.subject-course-img {
+    width: 100%;
+    height: 106px;
+    margin-bottom: 10px;
+}
+.subject-course-title {
+    color: #5D5D5D;
+    font-size: 14px;
+}
+.subject-course-content {
+    font-size: 14px;
+    color: #999999;
+}
+
+.subject-single > .subject-container {
+    margin-top: 0px;
+}
+
+.subject-single {
+    margin-left:24px;
+    width: 736px;
+}
+.subject-single-container {
+    width: 177px;
+    height: 200px;
+    margin:0px 3.5px 20px 3.5px;
+    float: left;
+    line-height: 21px;
+    overflow: hidden;
+}
+#pagination>div{
+    border : 2px solid #808080;
+    padding: 4px;
+    min-width: 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+}
+#pagination>div.active{
+    background-color: #808080;
+}
+#pagination>div.active a{
+    color : #ffffff;
+}
+#pagination a{
+    color : #808080;
+}
+#pagination{
+    text-align: center;
+}

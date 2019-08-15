@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sql.dao.UserBalanceMapper">
+
+    <select id="selUserBalanceByUserId" resultType="com.pojo.emarket.UserBalanceDTO" parameterType="int">
+        select * from userbalance where userid = #{userId} limit 1
+    </select>
+    
+    <insert id="insertUserBalance" parameterType="com.pojo.emarket.UserBalanceDTO" >
+    	insert into userbalance(username, password, balance, userid) 
+    	values(#{username},#{password},#{balance},#{userId})
+    </insert>
+    
+    <update id="modifyUserBalance" parameterType="com.pojo.emarket.UserBalanceDTO">
+    	update userbalance set balance=balance+#{balance} where userid = #{userId}
+    </update>
+
+    <select id="selUserBalanceByUserIds" resultType="com.pojo.emarket.UserBalanceDTO" parameterType="com.pojo.emarket.UserBalanceDTO">
+        select * from userbalance where userid IN
+        <foreach collection="userids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
+</mapper>

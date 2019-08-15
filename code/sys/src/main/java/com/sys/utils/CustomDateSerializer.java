@@ -1,0 +1,23 @@
+package com.sys.utils;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * 生成形如2014/12/8 15:30:22的时间字符串
+ * Created by Tony on 2014/12/8.
+ */
+public class CustomDateSerializer extends JsonSerializer<Date> {
+
+    @Override
+    public void serialize(Date date, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException, JsonProcessingException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        jsonGenerator.writeString(sdf.format(date));
+    }
+}

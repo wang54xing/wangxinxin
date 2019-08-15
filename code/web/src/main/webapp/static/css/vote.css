@@ -1,0 +1,154 @@
+.vote_box{
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    -moz-box-shadow:0px 3px 8px #d0d0d0;
+    -webkit-box-shadow:0px 3px 8px #d0d0d0;
+    box-shadow:0px 3px 8px #d0d0d0;
+    font: 600 16px 'Microsoft YaHei';
+    margin:20px 0px;
+}
+.vote_info{
+	 padding: 20px 20px;
+}
+.vote_header .title{
+	background:url(/img/vote_icon.png) no-repeat;
+	padding-left:38px;
+	color: #5B5B5B;
+  	float:left;
+}
+.vote_status{
+	float:right;
+	padding-left:22px;
+}
+.progress{
+	background:url(/img/progress.png) no-repeat;
+}
+.progress_end{
+	background:url(/img/progress_end.png) no-repeat;
+}
+.remark{
+	clear:both;
+	color: #979797;
+  	font: 600 14px 'SimSun';
+  	padding-left:40px;
+  	padding-top:10px;
+}
+.candidate_area{
+	padding-top:20px;
+	padding-left:40px;
+}
+.candiate{
+	color: #FF2495;
+  	float:left;
+}
+.members{
+	color: #FFFFFF;
+  	padding-right:100px;
+  	padding-left:10px;
+}
+.members > ul{
+	width:360px;
+	list-style:none;
+}
+.members > ul > li{
+	width:82px;
+	float:left;
+	margin-right:18px;
+	line-height:22px;
+	background-color:#aaa;
+	border-radius:20px;
+	margin-bottom:15px;
+}
+ul > li > div{
+	padding:2px 18px;
+	width:54px;
+	text-align:justify;
+    text-justify:distribute-all-lines;/*ie6-8*/
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+    cursor:pointer;
+}
+.vote_operations{
+	padding:12px 5px;
+}
+.vote_btn{
+	float:right;
+	width:64px;
+	height:24px;
+	color:#FFF;
+	padding:5px 10px;
+	border-radius:4px;
+}
+.btn_enable{
+	background-color:#FF7E00;
+}
+.btn_disable{
+	background-color:#AAA;
+}
+.btn_submit{
+	background-color:#5AB3FF;
+}
+.submit-comments-container{
+	 padding: 20px 20px;
+	 border-top:1px solid #d0d0d0;
+}
+.comments_content{
+	height:120px;
+    overflow: hidden;
+    border: 1px solid #d0d0d0;
+    font: 600 16px 'Microsoft YaHei';
+    width:96%;
+    padding:10px;
+}
+.operation_icons{
+	float:left;
+	width:60%
+}
+.operation_icons .icons{
+	margin-right:10px;
+}
+.input_hidden{
+	position:absolute;
+	z-index:100;
+	margin-left:-30px;
+	font-size:30px;
+	opacity:0;filter:alpha(opacity=0);
+	margin-top:-5px;
+	width:0px;
+}
+.comments-list{
+	
+}
+.comment-item{
+	padding:20px 20px;
+	border-top:1px solid #d0d0d0;
+}
+.host_name{
+	color:#33AEE7;
+	font: 400 14px 'Microsoft YaHei';
+	margin-right:20px;
+}
+.comment_time{
+	color:#AAA;
+	font: 400 14px 'Microsoft YaHei';
+}
+.head_portrait{
+	height:46px;
+	width:46px;
+	margin-right:20px;
+	float:left;
+}
+.comment_content{
+	padding:10px 85px 10px 65px;
+	color: #979797;
+  	font: 600 14px 'SimSun';
+}
+.commet_info{
+	padding-top:15px;
+}
+.candiate_selected{
+	background-color:#FF3E9D;
+}

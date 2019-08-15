@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  	<parent>
+		<groupId>fulaan</groupId>
+		<artifactId>oneconf</artifactId>
+		<version>1.0</version>
+		<relativePath>../oneconf/pom.xml</relativePath>
+	</parent>
+	
+  <artifactId>sqldb</artifactId>
+  <packaging>jar</packaging>
+
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- sql conf -->
+	<dependency>
+		<groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	</dependency>
+			
+	<dependency>  
+		<groupId>org.mybatis</groupId>  
+	    <artifactId>mybatis</artifactId>  
+	</dependency> 
+	<dependency>
+		<groupId>alibaba</groupId>
+		<artifactId>com.alibaba.druid</artifactId>
+	</dependency>
+    
+     <dependency>
+			<groupId>fulaan</groupId>
+			<artifactId>db</artifactId>
+			<version>${project.version}</version>
+	</dependency>
+    <dependency>
+			<groupId>fulaan</groupId>
+			<artifactId>sys</artifactId>
+			<version>${project.version}</version>
+	</dependency>
+	<dependency>
+			<groupId>fulaan</groupId>
+			<artifactId>pojo</artifactId>
+			<version>${project.version}</version>
+	</dependency>
+
+      <dependency>
+          <groupId>com.qiniu</groupId>
+          <artifactId>qiniu-java-sdk</artifactId>
+      </dependency>
+  </dependencies>
+</project>

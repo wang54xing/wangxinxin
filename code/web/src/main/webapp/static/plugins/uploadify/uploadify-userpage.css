@@ -1,0 +1,28 @@
+.uploadify-queue {
+    display: none;
+}
+
+.uploadify-button {
+    color: #000;
+    border: none;
+    border-radius: 0;
+    text-shadow: 0 0 0 transparent;
+}
+
+.uploadify-button.image-upload {
+    background: #fff url('/img/uploadImg.jpg') no-repeat 7px 4px !important;
+}
+
+.uploadify-button.attach-upload {
+    background: #fff url('/img/fileattach.png') no-repeat 12px 6px !important;
+}
+
+.uploadify-button.attach-upload-headmaster {
+    background: #fff url('/img/fileattach.png') no-repeat 8px 8px !important;
+    font-weight: 100 !important;
+    font-size: 15px !important;
+}
+
+.uploadify {
+    margin-bottom: 0;
+}

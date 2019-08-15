@@ -1,0 +1,51 @@
+html,body,div,h1,h2,h3,h4,h5,h6,p,img,dl,dt,dd,ol,ul,li,a,b,i,em,strong,form,table,tr,th,td,span,input,fieldset,select,option,textarea,label,iframe,header,nav,aside,article,section,button{margin:0;padding:0;border:0;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+
+img{display:block;}
+ol,ul{ list-style:none;}
+i,b,em,strong { font-style:normal; text-decoration:none; font-weight: normal;}
+body{font-family:Microsoft YaHei;color:#656565; background-color:#fff;position:relative;z-index:1;}
+a{text-decoration:none; color:red;font-family:'Microsoft YaHei','Arial', 'Helvetica', 'sans-serif','simsun','Lucida Grande','Lucida Sans Unicode';}
+a:hover{color: #ff5a0b;}
+img{display: inline}
+input{outline: none}
+textarea{outline: none}
+
+
+/*头部*/
+.all{width: 100%;height: auto;overflow: auto}
+.teacher_main{width: 900px; height: auto;margin: 0 auto;}
+.teacher_main_title{border-bottom: 1px solid #D3D3D3;height: 34px;width: 100%;color: #808281}
+.teacher_main_title_center{border-right: 1px solid #D3D3D3;border-left: 1px solid #D3D3D3;width: 900px; margin: 0 auto;height: 34px;line-height: 34px;}
+.teacher_main_title_center_left{float: left;padding-left: 20px;}
+.teacher_main_title_center_left>span{font-family: "Microsoft Yahei";font-weight: bold;font-size: 14px;border-right: 1px solid #D3D3D3;display: inline-block;height: 34px;padding-right: 20px;}
+.teacher_main_title_center_right{float: right;}
+.teacher_main_title_center_right_I{float: left;border-left: 1px solid #D3D3D3;padding-left: 20px;font-size: 14px;}
+.teacher_main_title_center_right_I img{position: relative;top: 5px;cursor: pointer}
+.teacher_main_title_center_right_II{float: right;cursor: pointer;}
+.teacher_main_title_center_right_II>a>span{font-size: 14px;border-left: 1px solid #D3D3D3;display: inline-block;height: 34px;margin-left: 20px;;padding: 0px 20px;color:#808281}
+.teacher_main_title_center_right_II>a>span:hover{color: #428BCA}
+.teacher_main_info{background:url("/img/application/teacher_try_01.png") no-repeat;width: 1280px;height:500px;margin: 0 auto;overflow: visible}
+.teacher_main_info_center{position: relative;top:200px;left: 550px;display: inline-block;color: #ffffff;font-size: 30px;background:url("../img/application/beijing_03.png")no-repeat;padding:1px 15px;cursor:pointer;}
+.teacher_main_info_bottom{position: relative;bottom: -218px;background-color: #000000;opacity:0.4;filter:alpha(opacity=0.4);width: 1280px;height: 240px }
+.teacher_main_info_bottom_info{width: 900px;margin: 0 auto;position: relative;bottom: 0px;}
+.teacher_main_info_bottom_info>ul>li{float: left;text-align: center;display: inline-block;color: #ffffff;border-right: 2px solid #BDBFC0;width: 220px;font-size: 14px;}
+.teacher_main_info_bottom_info>ul>li>dl{line-height: 30px;}
+.teacher_T{background-color: #505050;width: 1280px;height: 680px;margin: 0 auto}
+.teacher_main_I{color:#ffffff;display: inline-block;height: 50px;border-bottom: 2px solid #7D7D7D;width: 100%;line-height: 50px;font-size: 17px;padding-left: 40px;position: relative;left: 40px;}
+.teacher_main_I_LT{float: left;margin-left: 40px;color: #ffffff;display: inline-block;position: relative;top: 20px;font-size: 15px;line-height: 35px;width: 400px;position: relative;left: 40px;}
+.teacher_main_I_LT>dl>dd>input{height: 25px;background-color: #B9B9B9;border-radius: 3px;}
+.teacher_main_I_RT{margin-left: 40px;color: #ffffff;display: inline-block;position: relative;top: 20px;font-size: 15px;line-height: 35px;width: 400px;position: relative;left: 40px;}
+.teacher_main_I_RT>dl>dd>input{height: 25px;background-color: #B9B9B9;border-radius: 3px;}
+.teacher_main_I_RT>dl>dd>textarea{background-color: #B9B9B9;height: 100px;width: 300px;border-radius: 3px;}
+.teacher_main_I_RT_BO{background-color: #FFFFFF;padding: 5px 30px;cursor: pointer;display: inline-block;position: relative;top: 50px;left: 360px;color: #000000;border-radius: 3px;width: 35px;}
+.teacher_main_I_RT_BO:hover{color: #ffffff;background-color: #B9B9B9}
+
+/*底部版权*/
+#footer{  width: inherit;background-color:#ffffff; opacity:0.7;filter:alpha(opacity=70);height: 40px;min-width: 900px;color: white;line-height: 40px;color: #000000;font-weight: bold}
+#footer-w{ margin-left: auto;margin-right: auto;width: 900px;font-size: 12px;}
+#footer a {color: #000000;cursor:pointer;}
+#footer a:hover {color: red;}
+#footer img{vertical-align: middle; margin-right:5px;display: inline;}
+
+

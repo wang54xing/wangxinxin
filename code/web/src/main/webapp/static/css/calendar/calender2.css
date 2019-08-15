@@ -1,0 +1,344 @@
+html,body,div,h1,h2,h3,h4,h5,h6,p,img,dl,dt,dd,ol,ul,li,a,b,i,em,strong,form,table,tr,th,td,span,input,fieldset,select,option,textarea,label,iframe,header,nav,aside,article,section,button{margin:0;padding:0;border:0;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+
+img{display:block;}
+ol,ul{ list-style:none;}
+i,b,em,strong { font-style:normal; text-decoration:none; font-weight: normal;}
+body{font-family:Microsoft YaHei;color:#656565; background-color:#fff;position:relative;z-index:1;}
+a{text-decoration:none; color:red;font-family:'Microsoft YaHei','Arial', 'Helvetica', 'sans-serif','simsun','Lucida Grande','Lucida Sans Unicode';}
+a:hover{color: #ff5a0b;}
+img{display: inline}
+
+table
+{
+    border-collapse:collapse;
+}
+img{border-style: none}
+.calender_left_IMG{float: left}
+.calender_right_IMG{float: right ;}
+/*澶撮儴淇℃伅*/
+.calender_mian{position:relative;top:10px;width: 900px;height: auto;margin:0 auto;background-color:#ffffff;}
+.calender_mian>ul>li{border:1px solid #ffffff;width:900px;height: auto;border-top: none}
+.calender_Z_titile{height: 40px;background-color:#3D87C6;line-height: 40px;margin: 0 auto}
+.calender_Z_titile_LT{float: left;}
+.calender_Z_titile_LT>img{position: relative;left: 15px;top: 5px;}
+.calender_Z_titile_LT>span{color: #ffffff;position: relative;left: 10px;}
+.calender_Z_img_I{background-color: #ffffff;padding: 5px 10px;border-radius: 3px;position: relative;}
+.calender_Z_img_I:hover{background-color:#D6D6D6}
+.calender_Z_img_II{background-color: #ffffff;padding: 5px 10px;border-radius: 3px;}
+.calender_Z_img_II:hover{background-color:#D6D6D6}
+.calender_Z_img_VV{margin-left: 30px;}
+.calender_Z_img_VVI{cursor: pointer;margin-left: 5px;}
+.calender_Z_titile_RT{float: right;color: #000000;}
+/*************************************列表******************************************/
+.calender_mian_LB_Z{background-color:#E8E8E8;height: 32px;width: 100%;line-height: 32px;color: #000000;font-weight: bold;}
+.calender_mian_LB_Z>span{padding-left: 15px;}
+.calender_mian_LB_blue{background-color:#3D87C6;height: 32px;width: 100%;line-height: 32px;color: #ffffff;cursor: pointer;overflow: hidden;}
+.calender_mian_LB_blue_I{padding-left: 15px;display: inline-block;float: left;width: 40em;}
+.calender_mian_LB_blue_II{      float: right;padding-right: 15px;}
+.calender_mian_LB_red{background-color:#EC6061;height: 32px;width: 100%;line-height: 32px;color: #ffffff;cursor: pointer;overflow: hidden;}
+.calender_mian_LB_yellow{background-color:#FEA517;height: 32px;width: 100%;line-height: 32px;color: #ffffff;cursor: pointer;overflow: hidden;}
+
+
+
+.calender_Z_title_RT_I{float: left;position: relative;right: 25px;top: 4px;background-color:#ffffff;cursor: pointer;border-radius: 3px;border: 1px solid #C3C3C3 }
+.calender_Z_title_RT_I>ul>li{float: left;border: 1px solid #ffffff;border-radius: 3px;height: 28px;width: 51px;text-align: center;line-height: 28px;}
+.calender_Z_title_RT_I>ul>li:hover{background-color:#17A3E4;border:1px solid #C3C3C3;color: #ffffff}
+.calender_Z_titile_RT>select{width: 80px;height: 32px;border:1px solid #C3C3C3;font-family: "Microsoft Yahei";position: relative;right: 10px;top:1px;}
+.calender_Z_main{background-color: #F0F0F0;width: 900px;height: auto;position: relative;line-height:20px;}
+
+/*鍒楄〃*/
+.calender_Z_main_LT{width: 200px;height: 50px;position: relative;top: 10px;left: 20px;float: left;}
+.calender_Z_main_LT>dl>dt{font-size: 17px;color: #000000}
+.calender_Z_text_I{background-color:#EE2219;color: #ffffff;font-size: 14px;cursor: pointer;border-radius: 3px;padding: 0 5px;}
+.calender_Z_text_II{background-color:#F9802F;color: #ffffff;font-size: 14px;cursor: pointer;border-radius: 3px;padding:0 5px;}
+.calender_Z_main_RT{position: relative;left: 20px;top: 10px;width: 650px;margin-left: 200px;min-height: 70px;padding: 0 0 20px 0;}
+.calender_Z_text_III{font-size: 14px;color:#F34742;font-weight: bold;cursor: pointer}
+.calender_Z_text_IIII{font-size: 14px;font-weight: bold}
+.calender_Z_text_V{display: inline-block;font-size: 14px;width: 35em;word-wrap:break-word;}
+.calender_Z_text_IIV{font-size: 14px;color:#F39D45;font-weight: bold;cursor: pointer}
+.calender_Z_text_VI{font-size: 14px;color:#3AAEE7;font-weight: bold;cursor: pointer}
+.calender_Z_img_III{cursor: pointer}
+.calender_Z_img_IIII{position: relative;top: -3px;cursor: pointer;left:25px;}
+/*鍛ㄥ巻*/
+/***************************周历***********************************/
+.calender_center_info_text{width: 901px;height: auto;margin: 0 auto}
+.calender_center_info_TTB_II{background-color: #E8E8E8;border-left: 1px solid #ffffff;border-right: 1px solid #ffffff;height:50px;text-align: center;cursor: pointer;font-weight: bold;font-size: 17px;width: 90px;color: #2AA0E9}
+.calender_center_info_TB_II{background-color: #DEDEDE;border-left: 1px solid #ffffff;border-bottom: 1px solid  #ffffff;border-right: 1px solid #ffffff;height:32px;text-align: center;font-weight: bold;font-size:  17px;width: 115px;color: #2AA0E9}
+
+.calender_center_info_ZL_II{background-color: #E8E8E8;border-left: 1px solid #ffffff;border-right: 1px solid #ffffff;height:50px;text-align: center;cursor: pointer;font-weight: bold;font-size: 17px;width: 91px;color: #2AA0E9}
+.calender_center_info_TBT_Z_I>table{position: relative;}
+.calender_center_info_TB_I .calender_center_info_TB_III>td{position: relative;text-align: center;}
+.calender_center_info_TBT_III{width: 901px;height: 860px;background-color: #ffffff;position: relative;overflow-x: hidden;overflow-y:auto;}
+
+.calender_center_info_TBT_ZZ_I{background-color: #E8E8E8;border:1px solid #ffffff;height: 50px;vertical-align: top;}
+.calender_center_info_TBT_ZZZ_I{width: 901px;min-height: 50px;position: relative;}
+
+
+
+.calender_center_info_TBT_V_II{position: relative;width: 127;top: 10px;left: 10px;}
+
+.calender_center_info_TBT_V_III{background-color: #F66E12;color: #ffffff;font-size: 13px;padding: 1px 3px;border-radius:3px;cursor: pointer}
+.calender_center_info_TBT_V_IIII{background-color:#E90E06;color: #ffffff;font-size: 13px;padding: 1px 3px;border-radius:3px;cursor:pointer;}
+
+
+
+
+.calender_center_info_TBT_VV_II{position: relative;width: 127;top: 10px;left: 10px;}
+.calender_center_info_TBT_VV_V{position: relative;margin: 20px 0 0 10px;top: 0px;}
+
+.calender_center_info_TBT_Z_II{;position:absolute;left: 128px;width: 128px;background-color: #ffffff;height: 700px;border: 1px solid #C3C3C3;}
+.calender_center_info_TBT_V_V{position: relative;margin: 20px 0 0 10px;}
+
+
+.calender_center_info_TBT_V_RC{color:#F39432;font-weight: bold;line-height: 20px;font-size: 14px;}
+.calender_center_info_TBT_V_KC{color:#E90E06;font-weight: bold;line-height: 20px;font-size: 14px;}
+
+.calender_center_info_TBT_V_TZ{color:#17A3E4;font-weight: bold;line-height: 20px;font-size: 14px;}
+
+/***************************************周历***************************************/
+.calender_center_info_ZL_II_III{.calender_center_info_TBT_III{width: 901px;height: 860px;background-color: #ffffff;position: relative;overflow-x: hidden;overflow-y:auto;}}
+.calender_center_info_ZL_II_III{width: 901px;height: 860px;background-color: #ffffff;position: relative;overflow-x: hidden;overflow-y:auto;}
+.calender_center_info_TBT_ZL_II{background-color: #E8E8E8;border:1px solid #ffffff;height: 64px;vertical-align: top;width: 90px;}
+.calender_center_info_ZL_ZZZ_II{height: 64px;width: 90px;}
+.calender_center_info_ZL_ZZZ_I{height: 32px;width: 115px;position: relative;}
+.calender_center_info_ZL_ZZZ_III{font-size:14px;font-weight: bold;padding-left: 10px;}
+.calender_center_info_TBT_ZL_I{;background-color: #E8E8E8;border:1px solid #ffffff;height: 32px;width: 115px;}
+
+/*******************************背景颜色**************************************/
+.calender_center_info_ZL_red{z-index: 999;position:absolute;top: 1px;cursor: pointer;height: 32px;background-color:#ED6162;line-height: 32px;text-overflow: ellipsis;-moz-text-overflow:ellipsis;overflow: hidden;white-space:  nowrap;width: 115px;color: #ffffff;font-size: 15px;}
+.calender_center_info_ZL_blue{z-index: 999;position:absolute;top: 34px;cursor: pointer;height: 32px;background-color:#3D87C6;line-height: 32px;text-overflow: ellipsis;-moz-text-overflow:ellipsis;overflow: hidden;white-space:  nowrap;width: 115px;color: #ffffff;font-size: 15px;}
+.calender_center_info_ZL_yellow{z-index: 999;position:absolute;top: 32px;left: 164px;cursor: pointer;height:  32px;background-color:#FEA517;line-height: 32px;text-overflow: ellipsis;-moz-text-overflow:ellipsis;overflow:  hidden;white-space: nowrap;width: 115px;color: #ffffff;font-size: 15px;}
+
+
+
+.calender_center_info_TBT_V_SJ{font-size: 14px;font-weight:bold}
+.calender_center_info_TBT_V_NR{width: 8em;font-size: 14px;height: 20px;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+.calender_center_info_TBT_Z_III{;position:absolute;left: 256px;width: 128px;background-color: #ffffff;height: 700px;}
+.calender_center_info_TBT_Z_IIII{;position:absolute;left: 384px;width: 128px;background-color: #ffffff;height: 700px;}
+.calender_center_info_TBT_Z_V{;position:absolute;left: 512px;width: 128px;background-color: #ffffff;height: 700px;}
+.calender_center_info_TBT_Z_VI{;position:absolute;left: 642px;width: 128px;background-color: #ffffff;height: 700px;}
+.calender_center_info_TBT_Z_VII{;position:absolute;left: 771px;width: 128px;background-color: #ffffff;height: 700px;}
+/*鏈堝巻*/
+.calender_center_info_text{width: 901px;height: auto;position: relative;}
+.calender_center_info_TB_I .calender_center_info_TB_III>td{position: relative;width: 128px;height: 128px;border: 1px solid #ffffff;text-align: center;}
+.calender_center_info_AN_I{position: absolute;top:10px;left:10px;background-color:#E90E06;color: #ffffff;font-size: 13px;padding: 1px 3px;border-radius:3px;cursor: pointer}
+.calender_center_info_AN_II{position: absolute;top:10px;left:60px;background-color: #F66E12;color: #ffffff;font-size: 13px;padding: 1px 3px;border-radius:3px;cursor:pointer;}
+.calender_center_info_AN_III{position: absolute;top:12px;left:109px;font-size: 13px;color: #000000;font-weight: bold}
+.calender_center_info_AN_VII{color:#F18E21;font-weight: bold;line-height: 20px;}
+.calender_center_info_TB_III dd{position: absolute;left:0px;top:35px;display: inline-block;width: 128px;height: 93px;text-align: left;padding-left: 10px;font-size: 14px;color: #666666}
+.calender_center_info_AN_IIII{color:#E90E06;font-weight: bold;line-height: 20px; }
+.calender_center_info_AN_V{display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;width: 8em;line-height: 20px;}
+.calender_center_info_AN_VI{color:#17A3E4;line-height: 25px;}
+/*搴曢儴鐗堟潈*/
+#footer{  width: inherit;background-color:rgb(0, 0, 0); opacity:0.7;filter:alpha(opacity=70);height: 40px;min-width: 900px;color: white;line-height: 40px;}
+#footer-w{ margin-left: auto;margin-right: auto;width: 900px;font-size: 12px;}
+#footer a {color: white;cursor:pointer;}
+#footer a:hover {color: red;}
+#footer img{vertical-align: middle; margin-right:5px;display: inline;}
+
+/*****************************************月历*************************************************/
+.calender_center_info_YL_II{background-color:#F0F0F0;height: 97px;width: 120px;border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;border-bottom: 1px solid #ffffff;font-size: 14px;color: #000000;line-height: 32px;}
+.calender_center_info_YL_III{height: 32px;border-bottom: 1px solid #ffffff}
+.calender_center_info_YL_II_I{float: left;font-weight: bold}
+.calender_center_info_YL_II_II{float: right;cursor: pointer;font-weight: bold}
+.calender_center_info_YL_IIII{color: #ffffff;cursor: pointer;height: 60px;border-bottom: 1px solid #ffffff;line-height: 60px;width: 9em;text-overflow: ellipsis;-moz-text-overflow:ellipsis;overflow: hidden;white-space: nowrap;background-color: #3E86C4}
+.calender_center_info_YL_V{color: #ffffff;cursor: pointer;height: 30px;;border-bottom: 1px solid #ffffff;line-height: 30px;width: 9em;text-overflow: ellipsis;-moz-text-overflow:ellipsis;overflow: hidden;white-space: nowrap;background-color: #3E86C4}
+.calender_center_info_YL_VI{color: #ffffff;cursor: pointer;height: 30px;line-height: 30px;width: 9em;text-overflow: ellipsis;-moz-text-overflow:ellipsis;overflow: hidden;white-space: nowrap;background-color: #3E86C4}
+.calender_center_info_YL_VII{height: 62px;line-height: 62px;width: 9em;}
+.calender_center_info_TB_I{width: 100%}
+/*寮瑰嚭妗�1111111111*/
+input{outline: none}
+.popup_text_I{background-color:#757575;width: 100%;height: 100%;position: fixed;opacity: 0.8;filter:alpha(opacity=80);z-index: 10000}
+.popup_text_info_I{height: 330px;width: 470px;border: 5px solid #C0C0C0;background-color: #ffffff;position: fixed;left: 50%;top: 50%;margin-left: -235px;margin-top: -275px;z-index: 20000}
+.popup_text_I_friest{color: #0997D4;height: 40px;background-color: #D1EEFF;}
+#popup_text_info-I .popup_text_II_friest{position: absolute;left: 15px;top: 7px;}
+.popup_text_KC{height: 20px;}
+.popup_text_KC>span{font-size: 14px;color: #000000;position:absolute;left: 25px;top: 60px;}
+.popup_text_KC>input{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 60px;width: 340px;height: 20px;}
+.popup_text_NR{height: 50px;}
+.popup_text_NR>span{font-size: 14px;color: #000000;position:absolute;left: 25px;top: 90px;}
+.popup_text_NR>textarea{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 90px;width: 340px;height: 100px;resize: none;outline: none;text-indent: 1em;}
+.popup_text_KS{height: 20px;}
+.popup_text_KS>span{font-size: 14px;color: #000000;position:absolute;left: 10px;top: 200px;}
+.popup_text_KS>input{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 200px;width: 130px;height: 20px;color: #747474;}
+.popup_text_JS{height: 20px;}
+.popup_text_JS>span{font-size: 14px;color: #000000;position:absolute;left: 220px;top: 200px;}
+.popup_text_JS>input{border: 1px solid #C3C3C3;position: absolute;left: 290px;top: 200px;width: 130px;height: 20px;color: #747474;}
+.popup_text_TX{height: 20px}
+.popup_text_TX>span{font-size: 14px;color: #000000;position:absolute;left: 10px;top: 140px;}
+.popup_text_TX>select{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 140px;width: 220px;height: 25px;outline: none;color: #747474;}
+.popup_text_FX{height: 20px;}
+.popup_text_FX>span{font-size: 14px;color: #000000;position:absolute;left: 22px;top: 140px;}
+.popup_text_FX>select{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 140px;width: 220px;height: 25px;outline: none;color: #747474;}
+.popup_text_CF{height: 20px;}
+.popup_text_CF>span{font-size: 14px;color: #000000;position:absolute;left: 35px;top: 230px;}
+.popup_text_CF>select{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 230px;width: 220px;height: 25px;outline: none;color: #747474;}
+.popup_text_BC .popup_text_BC_I{display: inline-block;position: absolute;top: 280px;left: 80px;background-color: #19A3E4;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_BC .popup_text_BC_I:hover{background-color: #D6D6D6;color:#000000;cursor: pointer}
+.popup_text_BC .popup_text_BC_II{display: inline-block;position: absolute;top: 280px;left: 180px;background-color: #19A3E4;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_BC .popup_text_BC_II:hover{background-color:  #D6D6D6;color:#000000;cursor: pointer}
+/********************************每周************************************************/
+.popup_text_MZ{min-height: 500px;width: 510px;border: 5px solid #C0C0C0;background-color: #ffffff;position: fixed;left: 50%;top: 50%;margin-left: -235px;margin-top: -275px;z-index: 20000}
+.popup_text_MZ_I{height: 20px;}
+.popup_text_MZ_I>.popup_text_MZ_II{position: absolute;top: 385px;left: 40px}
+.popup_text_MZ_II+span{position:absolute;left: 60px;top: 380px;}
+.popup_text_MZ_III_I{border: 1px solid #C3C3C3;width: 50px;height: 25px;}
+.popup_text_MZ_I>.popup_text_MZ_III{position: absolute;top: 385px;left: 140px}
+.popup_text_MZ_III+span{position: absolute;top: 380px;left: 160px}
+.popup_text_MZ_I>.popup_text_MZ_IIII{position: absolute;top: 385px;left: 320px}
+.popup_text_MZ_IIII_I{border: 1px solid #C3C3C3;width: 100px;height: 25px;}
+.popup_text_MZ_IIII+span{position: absolute;top: 380px;left: 340px;}
+.popup_text_MZ_BC_I .popup_text_MZ_BC_I{display: inline-block;position: absolute;top: 425px;left: 80px;background-color: #19A3E4;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_MZ_BC_I .popup_text_MZ_BC_I:hover{background-color: #D6D6D6;color: #000000;cursor: pointer}
+.popup_text_MZ_BC_I .popup_text_MZ_BC_II{display: inline-block;position: absolute;top: 425px;left: 180px;background-color:#19A3E4;;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_MZ_BC_I .popup_text_MZ_BC_II:hover{background-color: #D6D6D6;color: #000000;cursor: pointer}
+.popup_text_MZ_V{height: 20px;}
+.popup_text_MZ_V>.popup_text_MZ_V_I{position: absolute;top: 305px;left: 40px}
+.popup_text_MZ_V_I_I{border: 1px solid #C3C3C3;width: 50px;height: 25px;}
+.popup_text_MZ_V>.popup_text_MZ_V_II{position: absolute;top: 305px;left: 300px}
+.popup_text_MZ_V_II+span{position: absolute;top: 300px;left: 320px}
+.popup_text_MZ_V_I+span{position: absolute;top: 300px;left: 60px}
+.popup_text_MZ_VV{height:20px}
+.popup_text_MZ_VV>span{position: absolute;top: 350px;left: 40px}
+/*寮瑰嚭妗�2222222222222222222222*/
+.popup_text_II{background-color:#757575;width: 100%;height: 100%;position: fixed;opacity: 0.8;filter:alpha(opacity=80);z-index: 10000}
+.popup_text_info_II{min-height: 390px;width: 510px;border: 5px solid #C0C0C0;background-color: #ffffff;position: fixed;left: 50%;top: 50%;margin-left: -235px;margin-top: -275px;z-index: 20000}
+.popup_text_I_friest{color: #0997D4;height: 40px;background-color: #D1EEFF;}
+.popup_text_II_friest{position: absolute;left: 15px;top: 8px;}
+.popup_text_XJ_I{height: 20px}
+.popup_text_XJ_I>.popup_text_XJ_I_I{position: absolute;left: 80px;top: 65px;}
+.popup_text_XJ_I_I+span{position: absolute;left: 100px;top: 60px;}
+.popup_text_XJ_I>.popup_text_XJ_I_II{position: absolute;left: 200px;top: 65px;}
+.popup_text_XJ_I_II+span{position: absolute;left: 220px;top: 60px;}
+.popup_text_NR_I{height: 20px;}
+.popup_text_NR_I>span{font-size: 14px;color: #000000;position:absolute;left: 37px;top: 100px;}
+.popup_text_NR_I>input{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 100px;width: 340px;height: 20px;color: #747474;}
+.popup_text_KC_I{height: 20px;}
+.popup_text_KC_I>span{font-size: 14px;color: #000000;position:absolute;left: 37px;top: 130px;}
+.popup_text_KC_I>textarea{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 130px;width: 340px;height: 80px;outline: none;resize: none}
+.popup_text_KS_I{height: 20px;}
+.popup_text_KS_I>span{font-size: 14px;color: #000000;position:absolute;left: 10px;top: 220px;}
+.popup_text_KS_I>input{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 220px;width: 130px;height: 20px;color: #747474;}
+.popup_text_JS_I{height: 20px;}
+.popup_text_JS_I>span{font-size: 14px;color: #000000;position:absolute;left: 220px;top: 220px;}
+.popup_text_JS_I>input{border: 1px solid #C3C3C3;position: absolute;left: 290px;top: 220px;width: 130px;height: 20px;color: #747474;}
+.popup_text_TX_I{height: 20px}
+.popup_text_TX_I>span{font-size: 14px;color: #000000;position:absolute;left: 20px;top: 200px;}
+.popup_text_TX_I>select{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 200px;width: 220px;height: 25px;outline: none;color: #747474;}
+.popup_text_FX_I{height: 20px;}
+.popup_text_FX_I>span{font-size: 14px;color: #000000;position:absolute;left: 22px;top: 240px;}
+.popup_text_FX_I>select{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 240px;width: 220px;height: 25px;outline: none;color: #747474;}
+.popup_text_CF_I{height: 20px;}
+.popup_text_CF_I>span{font-size: 14px;color: #000000;position:absolute;left: 35px;top: 250px;}
+.popup_text_CF_I>select{border: 1px solid #C3C3C3;position: absolute;left: 80px;top: 250px;width: 220px;height: 25px;outline: none;color: #747474;}
+.popup_text_CX_I{height: 20px;}
+.popup_text_CX_I>.popup_text_CX_II{position: absolute;top: 305px;left: 40px}
+.popup_text_CX_II+span{position:absolute;left: 60px;top: 300px;}
+.popup_text_CX_III_I{border: 1px solid #C3C3C3;width: 50px;height: 25px;}
+.popup_text_CX_I>.popup_text_CX_III{position: absolute;top: 305px;left: 140px}
+.popup_text_CX_III+span{position: absolute;top: 300px;left: 160px}
+.popup_text_CX_I>.popup_text_CX_IIII{position: absolute;top: 305px;left: 320px}
+.popup_text_CX_IIII_I{border: 1px solid #C3C3C3;width: 100px;height: 25px;}
+.popup_text_CX_IIII+span{position: absolute;top: 300px;left: 340px;}
+.popup_text_BC_I .popup_text_BC_I{display: inline-block;position: absolute;top: 345px;left: 80px;background-color: #19A3E4;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_BC_I .popup_text_BC_I:hover{background-color: #D6D6D6;color: #000000;cursor: pointer}
+.popup_text_BC_I .popup_text_BC_II{display: inline-block;position: absolute;top: 345px;left: 180px;background-color:#19A3E4;;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_BC_I .popup_text_BC_II:hover{background-color: #D6D6D6;color: #000000;cursor: pointer}
+/*日历*/
+.calender_center_info_TBT_RL_I{background-color: #E8E8E8;border:1px solid #ffffff;height: 32px;vertical-align: top;}
+.calender_center_info_RL_ZZZ_I{width: 808px;height: 32px;position: relative;}
+
+.calender_center_info_TBT_RL_II{background-color: #E8E8E8;border:1px solid #ffffff;height: 64px;vertical-align: top;}
+.calender_center_info_RL_ZZZ_II{width: 90px;height: 64px;position: relative;}
+.calender_center_info_RL_ZZZ_III{font-size:14px;font-weight: bold;padding-left: 10px;}
+.calender_center_info_TBT_Z_I>table{position: relative;}
+.calender_center_info_TBT_RL_blue{cursor: pointer;position: absolute;left: 92px;top: 1px;z-index: 999;background-color: #3D87C6;height:32px;line-height: 32px;color: #ffffff;width: 100px;overflow: hidden;text-overflow: ellipsis;-moz-text-overflow:ellipsis;white-space: nowrap}
+.calender_center_info_TBT_RL_red{cursor: pointer;position: absolute;left: 192px;top: 34px;z-index: 999;background-color: #ED6162;height:32px;line-height: 32px;color: #ffffff;width: 50px;overflow: hidden}
+.calender_center_info_TBT_RL_yellow{cursor:pointer;position: absolute;left: 242px;top: 67px;z-index: 999;background-color: #FEA517;height:131px;line-height: 32px;color: #ffffff;width: 500px;overflow: hidden}
+.calender_center_info_TBT_RL_IIII{position: relative;left: 0px;top: 0px;}
+/*鍒犻櫎*/
+#popup_text_III{background-color:#757575;width: 100%;height: 100%;position: fixed;opacity: 0.8;filter:alpha(opacity=80);z-index: 10000}
+#popup_text_info_III{height: 200px;width: 470px;border: 5px solid #C0C0C0;background-color: #ffffff;position: fixed;left: 50%;top: 50%;margin-left: -235px;margin-top: -100px;z-index: 20000;}
+.popup_S_I{color: #000000;position: relative;text-align: center;font-size: 17px;height: 40px;}
+ .popup_text_BC_I{display: inline-block;position: absolute;top: 150px;left: 150px;background-color: #19A3E4;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_BC_I:hover{background-color: #D6D6D6;color: #000000;cursor: pointer}
+.popup_text_BC_II{display: inline-block;position: absolute;top: 150px;left: 240px;background-color:#19A3E4;;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_SS_II:before{content: "“"}
+.popup_text_BC_II:hover{background-color: #D6D6D6;color: #000000;cursor: pointer}
+.popup_SS_II{overflow: hidden;text-overflow: ellipsis;-o-text-overflow:ellipsis;white-space: nowrap; max-width: 12em;color:#19A3E4;display: inline-block;position: relative;top: 5px;}
+.calender_Z_main_LT>dl>dt{font-size: 17px;color: #000000}
+.calender_Z_main_LT>dl>dd{margin: 5px 0 0 0} 
+.popup_S_V_I{position: absolute;top: 25px;left: 15px;}
+.popup_S_V_II{position: absolute;top: 65px;left: 15px;}
+.popup_S_V_I_I{position: absolute;top: 20px;left: 30px;}
+.popup_S_V_II_I{position: absolute;top: 60px;left: 30px;}
+
+
+
+.popup_S_V_I_II:before{content: "”" ;color:#19A3E4 }
+/*****************************新建*****************************/
+.popup_text_XJ{min-height: 300px;width: 550px;border: 5px solid #C0C0C0;background-color: #ffffff;position: fixed;left: 50%;top: 50%;margin-left: -275px;margin-top: -275px;z-index: 20000;position: absolute;}
+.popup_text_XJ_top{height: 50px;width: 510px;line-height: 50px;}
+.popup_top_I{margin-left: 100px;}
+.popup_top_II{margin-left: 50px;}
+.popup_text_XJ_top_V{height: 50px;line-height: 50px;padding-left: 50px;}
+.popup_text_XJ_top_V_I{height: 30px;width: 350px;margin-left: 20px;outline: none;border: 1px solid #C3C3C3}
+.popup_text_XJ_top_VI{height: 100px;padding-left: 50px;vertical-align: top;}
+.popup_text_XJ_top_VI>textarea{resize: none;outline: none;height: 100px;width: 350px;margin-left: 20px;border: 1px solid #C3C3C3}
+.popup_text_XJ_top_KC{height: 50px;line-height: 70px;padding-left: 35px;}
+.popup_text_XJ_top_KC>input{height: 30px;width: 350px;margin-left: 20px;outline: none;border: 1px solid #C3C3C3}
+.popup_text_XJ_top_VII{height: 50px;padding-left: 26px;line-height: 50px;}
+.popup_text_XJ_top_VII_I{height: 30px;width: 130px;margin-left: 20px;outline: none;border: 1px solid #C3C3C3}
+.popup_text_XJ_top_VII_II{height: 30px;width: 130px;margin-left: 23px;outline: none;border: 1px solid #C3C3C3}
+.popup_text_XJ_VIII{height: 50px;padding-left:50px;}
+.popup_text_XJ_VIII>select{border: 1px solid #C3C3C3;margin-left: 15px;height: 30px;width: 200px;outline: none;font-family: "Microsoft Yahei";}
+/********************************每年每月每周**************************************/
+.popup_text_XJ_YE{height: 50px;line-height: 50px;padding-left: 100px;}
+.popup_text_XJ_YE_I{height: 30px;width: 50px;border: 1px solid #C3C3C3}
+.popup_text_XJ_YE_II{margin-left: 15px;margin-right: 10px;}
+.popup_text_XJ_YE_III{margin-left: 15px;margin-right: 10px;}
+.popup_text_XJ_YE_IIII{margin-right: 10px;}
+.popup_text_XJ_YE>select{border: 1px solid #C3C3C3;height: 30px;width: 100px;}
+/***********************************每日*******************************************/
+.popup_text_XJ_DY{height: 50px; line-height: 50px;padding-left: 100px;}
+.popup_text_XJ_DY_I{height: 30px;width: 50px;border: 1px solid #C3C3C3}
+.popup_text_XJ_DY_III{margin-right: 10px;}
+.popup_text_XJ_DY_II{margin: 0 10px 0 20px;}
+.popup_text_XJ_JS{height: 50px;padding-left: 100px;line-height: 50px;}
+.popup_text_XJ_DY_V{height: 50px;line-height: 50px;padding-left: 100px;}
+.popup_text_XJ_DY_V_I{margin-right: 10px;}
+.popup_text_XJ_DY_V_II{margin: 0 10px 0 20px;}
+.popup_text_XJ_DY_V_III{border: 1px solid #C3C3C3;height: 30px; width: 50px;}
+.popup_text_XJ_DY_V_IIII{margin: 0 10px 0 20px;}
+.popup_text_XJ_DY_V>select{border: 1px solid #C3C3C3;height: 30px ;width: 100px;outline: none}
+.popup_text_XJ_bottom{height: 60px;margin-top: 20px;margin-left:-6px;}
+.popup_text_bottom_I{display: inline-block;background-color: #19A3E4;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff;margin-left: 100px;}
+.popup_text_bottom_I:hover{background-color: #D6D6D6;color:#000000;cursor: pointer}
+.popup_text_botton_II{display: inline-block;background-color: #19A3E4;padding: 5px 25px;border-radius: 5px;cursor: pointer;color: #ffffff}
+.popup_text_botton_II:hover{background-color:  #D6D6D6;color:#000000;cursor: pointer}
+/*****************************************通知********************************************/
+.popup_text_TZ{min-height: 300px;width: 510px;border: 5px solid #C0C0C0;background-color: #ffffff;position: fixed;left: 50%;top: 50%;margin-left: -235px;margin-top: -275px;z-index: 20000;color: #000000;font-size: 15px;}
+.popup_text_II_friestT{color:#70BBF3;float: right;margin: 10px 20px 0 0;font-size: 25px;cursor: pointer }
+.popup_TZ_I{width: 490px;height: 130px;margin: 10px 10px;}
+.popup_TZ_I_I{height: 30px;width: 490px;line-height: 30px;padding-left: 30px;}
+.popup_TZ_I_II{display: inline-block;width: 13em;overflow: hidden;height: 30px;text-overflow: ellipsis;-moz-text-overflow:ellipsis;white-space: nowrap}
+.popup_color{color:#838383}
+.popup_TZ_I_III{display: inline-block;overflow: hidden;height: 30px;margin-left: 60px;}
+.popup_TZ_II_I{height: 30px;width: 490px;line-height: 30px;padding-left: 15px;}
+.popup_TZ_II_II{display: inline-block;width: 12em;overflow: hidden;height: 30px;text-overflow: ellipsis;-moz-text-overflow:ellipsis;white-space: nowrap}
+.popup_TZ_II_III{display: inline-block;height: 30px;overflow: hidden}
+.popup_TZ_II_IIII{color:#61BDEE}
+.popup_TZ_II_V{display: inline-block;overflow: hidden;height: 30px;margin-left: 16px;}
+.popup_TZ_III_I{width: 460px;padding-left: 30px;vertical-align: top;max-height: 60px;}
+.popup_TZ_III_II{width:400px;position: relative;top: -20px;left: 50px;max-height: 60px;word-break: break-all;overflow: hidden;color:#838383;}
+.popup_TZ_text_I{background-color: #EDF2F5;height: 32px;border-bottom: 1px solid #ffffff;line-height: 32px;padding-left: 15px;}
+.popup_TZ_text_III{background: no-repeat;position: relative;top: 5px;padding-left: 20px;cursor: pointer}
+.popup_TZ_text_IIII{font-size: 14px;color: #9A9EA1}
+.popup_TZ_text_I_I{float: left;}
+.popup_TZ_text_I_III{color: #9A9EA1}
+.popup_TZ_text_I_II{float: right;padding-right: 15px;color: #4B8FD3;cursor: pointer}
+.popup_TZ_text_I_IIII{padding-left:10px; }
+.popup_TZ_text_bottom{;height: 70px;text-align:center;font-size: 17px;line-height: 70px;}
+.popup_TZ_text_bottom_I{background-color:#19A3E4;color: #ffffff;padding: 8px 25px;cursor: pointer;border-radius: 5px;}
+.popup_TZ_text_bottom_I:hover{background-color: #D6D6D6;color: #000000}

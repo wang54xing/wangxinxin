@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite>
+    <rule>
+        <from>^/user/studenttopfive$</from>
+        <to>/user/studenttopfive.do?classId=$1</to>
+    </rule>
+    <!--玩伴-->
+    <rule>
+        <from>^/friendcircle/friendlist$</from>
+        <to>/friendcircle/getFriendList.do?type=0</to>
+    </rule>
+    <rule>
+        <from>^/activity/activityMain$</from>
+        <to>/activity/activityMain.do</to>
+    </rule>
+    <rule>
+        <from>^/reverse/getStudentInfo</from>
+        <to>/myclass/studentinfo.do</to>
+    </rule>
+    <rule>
+        <from>^/student/class$</from>
+        <to>/myclass/myclass4stu.do</to>
+    </rule>
+    <rule>
+        <from>^/teacher/class$</from>
+        <to>/myclass/myclass4tea.do</to>
+    </rule>
+    <rule>
+        <from>^/reverse/getClassInfo</from>
+        <to>/myclass/classinfos.do</to>
+    </rule>
+    <!--我的班级-->
+    <rule>
+        <from>^/myclass/addexp/([A-Za-z0-9]+)$</from>
+        <to>/myclass/addexp.do?classId=$1</to>
+    </rule>
+    <rule>
+        <from>^/myclass/statstu/([A-Za-z0-9]+)$</from>
+        <to>/myclass/lead2stat.do?classId=$1</to>
+    </rule>
+    <rule>
+        <from>^/myclass/lead2stustat/([A-Za-z0-9]+)$</from>
+        <to>/myclass/lead2stustat.do?studentId=$1</to>
+    </rule>
+    <rule>
+        <from>^/myclass/lead2stustat/([A-Za-z0-9]+)/([A-Za-z0-9]+)$</from>
+        <to>/myclass/lead2stustat.do?classId=$1&amp;studentId=$2</to>
+    </rule>
+    <rule>
+        <from>^/myclass/tointerestclass$</from>
+        <to>/myclass/tointerestclass.do</to>
+    </rule>
+    <rule>
+        <from>^/myclass/lead2ls/([0-9]+)/([A-Za-z0-9]+)/([0-9]+)$</from>
+        <to>/myclass/lead2ls.do?classId=$2&amp;type=$12&amp;termType=$3</to>
+    </rule>
+
+    <rule>
+        <from>^/myclass/interstat/([A-Za-z0-9]+)/([0-9]+)$</from>
+        <to>/myclass/interstat.do?classId=$1&amp;termType=$2</to>
+    </rule>
+
+    <rule>
+        <from>^/myclass/savels/([0-9]+)$</from>
+        <to>/myclass/saveLessonScore.do?termType=$1</to>
+    </rule>
+
+    <rule>
+        <from>^/myclass/removelessonscore/([A-Za-z0-9]+)/([0-9]+)$</from>
+        <to>/myclass/removeLesson.do?classId=$1&amp;lessonIndex=$2</to>
+    </rule>
+
+    <rule>
+        <from>^/myclass/finalcomment/([A-Za-z0-9]+)/([0-9]+)$</from>
+        <to>/myclass/finalcomment.do?classId=$1&amp;type=1&amp;termType=$2</to>
+    </rule>
+    <rule>
+        <from>^/myclass/toselinclass$</from>
+        <to>/myclass/toselinclass.do</to>
+    </rule>
+
+    <rule>
+        <from>^/myclass/interestclassofschool$</from>
+        <to>/myclass/interestclassofschool.do</to>
+    </rule>
+    <!--我的学校-->
+    <rule>
+        <from>^/myschool/teacher$</from>
+        <to>/myschool/teacher.do</to>
+    </rule>
+    <rule>
+        <from>^/myschool/masterclass$</from>
+        <to>/myschool/masterclass.do</to>
+    </rule>
+    <rule>
+        <from>^/teacher/course/([A-Za-z0-9]+)$</from>
+        <to>/myschool/teacherdetail.do?teacherId=$1</to>
+    </rule>
+    <rule>
+        <from>^/myschool/mycoll$</from>
+        <to>/myschool/mycoll.do</to>
+    </rule>
+    <rule>
+        <from>^/myschool/managesubject$</from>
+        <to>/myschool/managesubject.do</to>
+    </rule>
+    <!--<rule>-->
+        <!--<from>^/myschool/manageteacher$</from>-->
+        <!--<to>/myschool/manageteacher.do</to>-->
+    <!--</rule>-->
+    <rule>
+        <from>^/myschool/manageteacher$</from>
+        <to>/manage/teachermanage.do</to>
+    </rule>
+    <rule>
+        <from>^/myschool/manageschool$</from>
+        <to>/myschool/mangeschool.do</to>
+    </rule>
+    <rule>
+        <from>^/myschool/manageclass/([A-Za-z0-9]+)$</from>
+        <to>/myschool/manageclass.do?gradeId=$1</to>
+    </rule>
+
+    <rule>
+        <from>^/myschool/managestudent/([A-Za-z0-9]+)$</from>
+        <to>/myschool/managestudent.do?classId=$1</to>
+    </rule>
+
+    <rule>
+        <from>^/myschool/manageinterest$</from>
+        <to>/myschool/manageinterest.do</to>
+    </rule>
+    <rule>
+        <from>^/myschool/managenews$</from>
+        <to>/myschool/managenews.do</to>
+    </rule>
+    <rule>
+        <from>^/myschool/managenewscolumn$</from>
+        <to>/myschool/managenewscolumn.do</to>
+    </rule>
+
+    <rule>
+        <from>^/myschool/editnews$</from>
+        <to>/myschool/editnews.do</to>
+    </rule>
+    <rule>
+        <from>^/user$</from>
+        <to>/user/userpage.do</to>
+    </rule>
+
+    <!--问卷调查-->
+    <rule>
+        <from>^/questionnaire$</from>
+        <to>/questionnaire/index.do</to>
+    </rule>
+    <rule>
+        <from>^/questionnaire/answerpage$</from>
+        <to>/WEB-INF/pages/questionnaire/answer.html</to>
+    </rule>
+
+    <rule>
+        <from>^/questionnaire/staticpage$</from>
+        <to>/WEB-INF/pages/questionnaire/static.html</to>
+    </rule>
+
+    <rule>
+        <from>^/questionnaire/newpage$</from>
+        <to>/WEB-INF/pages/questionnaire/new.html</to>
+    </rule>
+    <rule>
+        <from>^/questionnaire/newpage2$</from>
+        <to>/WEB-INF/pages/yunying/new.html</to>
+    </rule>
+
+    <rule>
+        <from>^/questionnaire/relevantpage$</from>
+        <to>/WEB-INF/pages/questionnaire/relevant.html</to>
+    </rule>
+    <rule>
+        <from>^/message$</from>
+        <to>/personal/letterpage.do</to>
+    </rule>
+
+    <rule>
+        <from>^/replyMessage$</from>
+        <to>/personal/replyletterpage.do</to>
+    </rule>
+
+
+    <rule>
+        <from>^/editphoto</from>
+        <to>/personal/settingpage.do</to>
+    </rule>
+
+    
+
+
+     <rule>
+        <from>^/basic</from>
+        <to>/personal/basic.do</to>
+    </rule>
+    
+     
+     
+
+    <rule>
+        <from>^/password</from>
+        <to>/personal/passwordpage.do</to>
+    </rule>
+
+
+
+    <!--群组聊天-->
+    <rule>
+        <from>^/chat$</from>
+        <to>/groupchat/index.do</to>
+    </rule>
+
+    <rule>
+        <from>^/studentScoreList</from>
+        <to>/experience/studentScoreList.do</to>
+    </rule>
+    <rule>
+        <from>^/studentScoreList/([A-Za-z0-9]+)$</from>
+        <to>/experience/studentScoreList.do?studentId=$1</to>
+    </rule>
+    <!-- 宠物商店 -->
+    <rule>
+        <from>^/petbag$</from>
+        <to>/pet/petbag.do</to>
+    </rule>
+    <rule>
+        <from>^/petCenter$</from>
+        <to>/pet/petCenter.do</to>
+    </rule>
+
+    <!-- 统计首页 -->
+    <rule>
+        <from>^/countMain$</from>
+        <to>/manageCount/countMain.do</to>
+    </rule>
+    <rule>
+        <from>^/managetotal/([A-Za-z0-9]+)$</from>
+        <to>/manageCount/schooltotal.do?schoolid=$1</to>
+    </rule>
+    <rule>
+        <from>^/managetotal/([A-Za-z0-9]+)/([A-Za-z0-9]+)$</from>
+        <to>/manageCount/schooltotal.do?a=$1&amp;schoolid=$2</to>
+    </rule>
+    <rule>
+        <from>^/functionUse/([A-Za-z0-9]+)$</from>
+        <to>/manageCount/functionUse.do?schoolId=$1</to>
+    </rule>
+
+    <rule>
+        <from>^/excellentLesson$</from>
+        <to>/emarket/mainGoodsPage.do</to>
+    </rule>
+
+    <rule>
+        <from>^/excellentLesson/accountOrder$</from>
+        <to>/emarket/myAccountOrder.do</to>
+    </rule>
+
+    <rule>
+        <from>^/excellentLesson/order$</from>
+        <to>/emarket/myOrder.do</to>
+    </rule>
+    <rule>
+        <from>^/excellentLesson/balance$</from>
+        <to>/emarket/myBalance.do</to>
+    </rule>
+    <rule>
+        <from>^/emarket$</from>
+        <to>/emarket/mainGoodsPage.do?index=8&amp;version=1</to>
+    </rule>
+    <!-- 考试 -->
+    <rule>
+        <from>^/exam/view/([A-Za-z0-9]+)$</from>
+        <to>/exam/view.do?id=$1</to>
+    </rule>
+    <rule>
+        <from>^/exam/parse/view/([A-Za-z0-9]+)$</from>
+        <to>/exam/parse/view.do?id=$1</to>
+    </rule>
+    <rule>
+        <from>^/exam/item/image/upload1/([A-Za-z0-9]+)/([A-Za-z0-9]+)$</from>
+        <to>/exam/item/image/upload1.do?answerId=$1&amp;picId=$2</to>
+    </rule>
+    
+    
+    
+     <!-- 日历配置 -->
+    <rule>
+        <from>^/calendar/day$</from>
+        <to>/calendar/day.do</to>
+    </rule>
+    <rule>
+        <from>^/calendar/week$</from>
+        <to>/calendar/week.do</to>
+    </rule>
+    <rule>
+        <from>^/calendar/month$</from>
+        <to>/calendar/month.do</to>
+    </rule>
+    <rule>
+        <from>^/calendar/list$</from>
+        <to>/calendar/list.do</to>
+    </rule>
+    <!--问卷调查-->
+
+
+
+
+
+
+
+
+
+    <rule>
+        <from>^/personal/userhelp$</from>
+        <to>/personal/userhelp.do</to>
+    </rule>
+
+    <!--app-->
+    <rule>
+        <from>^/mobile$</from>
+        <to>/customizedpage/apps.jsp</to>
+    </rule>
+    <!--定制页面-->
+   <!-- <rule>
+        <from>^/customizedpage/flippedClassroom/ypxx$</from>
+        <to>/xxchannel.action?scid=211</to>
+        &lt;!&ndash; <to>/business/flippedClassroom.jsp?scid=211</to> &ndash;&gt;
+    </rule>
+    <rule>
+        <from>^/ypxx$</from>
+        <to>/customizedpage/xxchannel.action</to>
+        &lt;!&ndash; <to>/business/flippedClassroom.jsp?scid=211</to> &ndash;&gt;
+    </rule>
+    <rule>
+        <from>^/masTeacher/([0-9]+)$</from>
+        <to>/customizedpage/masTeacher/$1.do</to>
+    </rule>-->
+    <rule>
+        <from>^/ypxx$</from>
+        <to>/customizedpage/ypxx/index.jsp</to>
+    </rule>
+    <rule>
+        <from>^/ah$</from>
+        <to>/customizedpage/ah/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/changshu$</from>
+        <to>/customizedpage/changshu/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/changzheng$</from>
+        <to>/customizedpage/changzheng/changzheng.jsp</to>
+    </rule>
+    <rule>
+        <from>^/chuzhou$</from>
+        <to>/customizedpage/chuzhou/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/huaibei$</from>
+        <to>/customizedpage/huaibei/HBshouye.jsp</to>
+    </rule>
+    <rule>
+        <from>^/huainan$</from>
+        <to>/customizedpage/huainan/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/fuyang21$</from>
+        <to>/customizedpage/fuyang21/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/hexielu$</from>
+        <to>/customizedpage/hexielu/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/jiangyan$</from>
+        <to>/customizedpage/jiangyan/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/jinan$</from>
+        <to>/customizedpage/jinan/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/maanshan$</from>
+        <to>/customizedpage/maanshan/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/hubei$</from>
+        <to>/customized/hubei/livePlatform.do</to>
+    </rule>
+    <rule>
+        <from>^/record_done$</from>
+        <to>/customized/record_done.do</to>
+    </rule>
+    <rule>
+        <from>^/hubei/hubeishuiguohu$</from>
+        <to>/customized/hubei/hubeishuiguohu.do</to>
+    </rule>
+    <rule>
+        <from>^/hubei/xizangshannan$</from>
+        <to>/customized/hubei/xizangshannan.do</to>
+    </rule>
+    <rule>
+        <from>^/recordHubei$</from>
+        <to>/customized/hubei/record.do</to>
+    </rule>
+    <rule>
+        <from>^/maanshan2$</from>
+        <to>/customizedpage/maanshan2/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/tongling$</from>
+        <to>/customizedpage/tongling/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/protocol/k6kt$</from>
+        <to>/protocol.jsp</to>
+    </rule>
+    <rule>
+        <from>^/maanshan22$</from>
+        <to>/customizedpage/mas22/flippedClassroom.jsp</to>
+    </rule>
+    <rule>
+        <from>^/mceduchina$</from>
+        <to>/customizedpage/meicheng/index.jsp</to>
+    </rule>
+    <rule>
+        <from>^/shanxi$</from>
+        <to>/customizedpage/shanxi/flippedClassroom.jsp</to>
+    </rule>
+
+    <rule>
+        <from>^/xiamen$</from>
+        <to>/customizedpage/xiamen/flippedClassroom.jsp</to>
+    </rule>
+
+    <rule>
+        <from>^/hpxx$</from>
+        <to>/customizedpage/yangpu/hangpushouye.jsp</to>
+    </rule>
+    <rule>
+        <from>^/aiguo$</from>
+        <to>/customizedpage/agindex/agindex.jsp</to>
+    </rule>
+    <rule>
+        <from>^/xiangyin$</from>
+        <to>/customizedpage/xiangyin/xiangyin.jsp</to>
+    </rule>
+    <rule>
+        <from>^/jinyuan$</from>
+        <to>/customizedpage/jinyuan/jinyuan.jsp</to>
+    </rule>
+    <rule>
+        <from>^/puyangxian$</from>
+        <to>/customizedpage/puyang/index.jsp</to>
+    </rule>
+
+
+
+
+
+    <rule>
+        <from>^/yangguang$</from>
+        <to>/customizedpage/yangguang/xiangyin.jsp</to>
+    </rule>
+    
+    
+    
+    <rule>
+        <from>^/tzzx$</from>
+        <to>/customizedpage/tangzhen/tangzhen.jsp</to>
+    </rule>
+    <!--版权链接-->
+    <rule>
+        <from>^/aboutus/k6kt$</from>
+        <to>/customizedpage/aboutUs.jsp</to>
+    </rule>
+    <rule>
+        <from>^/contactus/k6kt$</from>
+        <to>/customizedpage/contact.jsp</to>
+    </rule>
+    <rule>
+        <from>^/privacy/k6kt$</from>
+        <to>/customizedpage/privacy.jsp</to>
+    </rule>
+    <rule>
+        <from>^/service/k6kt$</from>
+        <to>/customizedpage/service.jsp</to>
+    </rule>
+    <rule>
+        <from>^/protocol/k6kt$</from>
+        <to>/customizedpage/protocol.jsp</to>
+    </rule>
+    <!--申请试用配置-->
+    <rule>
+        <from>^/application.jsp$</from>
+        <to>/customizedpage/application.jsp</to>
+    </rule>
+
+    <rule>
+        <from>^/lesson/uploadVideo.do</from>
+        <to>/lesson/video/upload.do</to>
+    </rule>
+    
+    <rule>
+        <from>^/client/getClientVersion.action?([A-Za-z0-9]+)$</from>
+        <to>/version/recently.do?$1</to>
+    </rule>
+     <!--商城-->
+    <rule>
+        <from>^/mall$</from>
+        <to>/mall/index.do</to>
+    </rule>
+    <!--文件管理-->
+    <rule>
+        <from>^/folder/home$</from>
+        <to>/folder/home.do</to>
+    </rule>
+
+    <rule>
+        <from>^/extensionClass/teaExtension$</from>
+        <to>/extensionClass/teaExtension.do</to>
+    </rule>
+
+    <rule>
+        <from>^/shoolbase/teachhome$</from>
+        <to>/shoolbase/teachhome.do</to>
+    </rule>
+    <rule>
+        <from>^/shoolbase/gradehome$</from>
+        <to>/shoolbase/gradehome.do</to>
+    </rule>
+    <rule>
+        <from>^/shoolbase/subjecthome$</from>
+        <to>/shoolbase/subjecthome.do</to>
+    </rule>
+    <rule>
+        <from>^/shoolbase/classhome$</from>
+        <to>/shoolbase/classhome.do</to>
+    </rule>
+    <rule>
+        <from>^/shoolbase/studenthome$</from>
+        <to>/shoolbase/studenthome.do</to>
+    </rule>
+    <rule>
+        <from>^/shoolbase/termhome$</from>
+        <to>/shoolbase/termhome.do</to>
+    </rule>
+    <rule>
+        <from>^/shoolbase/timetablehome$</from>
+        <to>/shoolbase/timetablehome.do</to>
+    </rule>
+    <rule>
+        <from>^/shoolbase/eduhome$</from>
+        <to>/shoolbase/eduhome.do</to>
+    </rule>
+
+    <rule>
+        <from>^/mynotice/home/1$</from>
+        <to>/mynotice/home.do?type=1</to>
+    </rule>
+    <rule>
+        <from>^/mynotice/home/2$</from>
+        <to>/mynotice/home.do?type=2</to>
+    </rule>
+    <rule>
+        <from>^/mynotice/home/3$</from>
+        <to>/mynotice/home.do?type=3</to>
+    </rule>
+    <rule>
+        <from>^/mynotice/create$</from>
+        <to>/mynotice/create.do</to>
+    </rule>
+    <rule>
+        <from>^/evluation/home/1$</from>
+        <to>/evluation/home.do</to>
+    </rule>
+    <rule>
+        <from>^/evluation/geEvaluation/2$</from>
+        <to>/evluation/geEvaluation2.do</to>
+    </rule>
+    <rule>
+        <from>^/evluation/empirical/3$</from>
+        <to>/evluation/empirical.do</to>
+    </rule>
+    <rule>
+        <from>^/evluation/administration/4$</from>
+        <to>/evluation/administration.do</to>
+    </rule>
+    <rule>
+        <from>^/xgk$</from>
+        <to>/customizedpage/gaokao/index.jsp</to>
+    </rule>
+    <rule>
+        <from>^/xgk/index$</from>
+        <to>/customizedpage/gaokao/list.jsp</to>
+    </rule>
+</urlrewrite>

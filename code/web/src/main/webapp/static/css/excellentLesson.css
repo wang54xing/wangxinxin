@@ -1,0 +1,151 @@
+#content_main_containerr{min-height: 66%;/*background: #ececec;*/}
+.account-right-content {padding: 10px;}
+#account-right-title{padding-bottom: 30px; margin-top: 20px;}
+h3{font-weight:800;font-size: 20px;}
+.account-balance {padding: 10px 12px;}
+.select-pay{
+	border: 1px solid #f3e695;background: #feffe4;
+}
+.account-records{padding: 10px 12px;border: 1px solid #ddd;}
+table{border: 1px solid #ddd;width:100%;}
+table tbody tr th{background:#ddd;height: 38px;text-align: center;border-right: 1px solid #ccc;}
+table tbody tr td{height: 38px;text-align: center;border-right: 1px solid #ddd;}
+.confirm{background:#f40;margin: 5px;width: 61px;height: 24px;overflow: hidden;line-height: 24px;}
+.confirm:hover{background:#ee6263;}
+.cancel{color:#222;margin:3px 5px;width: 61px;height: 24px;line-height: 24px;background: none repeat scroll 0% 0% #BBB;border:1px solid transparent;overflow: hidden;}
+.cancel:hover{background:none;color:#000;border:1px solid #f40;}
+.info-strong{margin:0 5px;}
+.recharge-info{padding:20px 10px;}
+#recharge-numb{border: 1px solid darkgray;height: 28px;line-height: 22px;border-radius: 4px;padding: 0 10px;margin: 0 5px;width: 110px;}
+.type-icon{position: relative;top: 3px;left: 5px;}
+.recharge-type{padding:0px 10px;}
+.confirm-btn{margin-top: 22px;margin-right: 0px;width: 180px;height: 37px;background: #fe4500;border-radius: 2px;}
+.confirm-btn:hover{background:#ee6263;}
+.account-input{vertical-align: top;;border: 1px solid darkgray;height: 28px;line-height: 22px;border-radius: 4px;width:180px;padding: 0 10px;margin: 0 5px;}
+.input-container{padding:10px;}
+.right-label{width: 160px;text-align: right;vertical-align: top;}
+.min-label{width: 80px;}
+.info-strong{margin:0 5px;}
+.standout{color:#f40;} 
+.money-numb{color:#fd000c;}
+#myaccount{overflow:hidden;}
+.main-wrap{
+	margin: 0px;
+	padding:0px;
+	background:#fff;
+}
+.main-container{
+	background: #ffffff;
+	width:780px;
+	margin:0 auto;
+}
+.pricelabel{
+	padding: 0 15px;
+	font-size: 22.158px;
+	font-family: "Microsoft YaHei";
+}
+.pay-item{
+	float:right;
+	width: 20%;
+	display:none;
+}
+.paytypelist{
+	margin-left:0;
+}
+.paytypeitem{
+	padding: 5px 12px;
+}
+.paytypeitem .pay-item{
+	line-height:28px;
+}
+.operations {
+	padding: 15px 2px;
+	text-align: center;
+}
+.operations a span {margin-right: 0px;margin-left:2px;border-right: 1px solid #c5c5c5;padding-right: 7px;border-radius: 2px;color: #ff7b00; }
+.operations a span:hover{text-decoration: underline;}
+.big-blod{
+	font-size: 14.571px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 51, 51, 51 );
+    line-height: 1.647;
+    -moz-transform: matrix( 1.61382982964834,0,0,1.64705882352941,0,0);
+    -webkit-transform: matrix( 1.61382982964834,0,0,1.64705882352941,0,0);
+    -ms-transform: matrix( 1.61382982964834,0,0,1.64705882352941,0,0);
+}
+.payresult{
+	display: block;
+	float: left;
+	margin-top: 30px;
+}
+.require-msg{
+	color:red;
+	display:none;
+	font-size: 13px;
+	font-family: "Microsoft YaHei";
+}
+.error-border{
+	border: 1px solid red;
+}
+.not-allow{
+	background: #aaa;
+	cursor: not-allowed;
+	margin-top: 22px;margin-right: 0px;width: 180px;height: 37px;border-radius: 2px;
+}
+.not-allow:hover{
+	background: #aaa;
+}
+.fast-excellent{
+	float: right !important;
+	width: auto !important;
+	padding: 0 7px;
+	font-size: 12px;
+	margin-right: 25px !important;
+	border-radius: 4px;
+	cursor:pointer;
+	color: #fff;
+	border: 1px solid rgb(179,179,179);
+	background-image: -moz-linear-gradient( 90deg, rgb(236,122,29) 0%, rgb(249,160,47) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(236,122,29) 0%, rgb(249,160,47) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(236,122,29) 0%, rgb(249,160,47) 100%)
+}
+.fast-excellent:hover{
+	background-image: -moz-linear-gradient( 90deg, rgb(216,112,19) 0%, rgb(269,180,47) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(216,112,19) 0%, rgb(269,180,47) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(216,112,19) 0%, rgb(269,180,47) 100%)
+}
+.help{font-size: 14px;}
+.course-select-container{width: 250px;text-align: center;padding: 0px;margin-left: 50px;}
+#search-salelist{
+	width: 80px;
+	height: 29px;
+	border-radius: 4px;
+	float: right;
+	margin-top: 18px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	background: #ddd;
+	color: #333;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	box-shadow: 0 0 2px;
+}
+#search-salelist:hover{
+	color: #222;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	box-shadow: 0 0 4px;
+}
+#withdraw-msg{color: red; display: none;}
+.input-P{
+	display: inline-block;
+	font-weight: normal;
+	width: 460px;
+	position: absolute;
+}
+.input-P label{
+	font-weight: normal;
+}
+.with-L{
+	margin-top: -10px;
+}

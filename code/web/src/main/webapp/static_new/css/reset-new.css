@@ -1,0 +1,132 @@
+html,body,div,h1,h2,h3,h4,h5,h6,p,img,dl,dt,dd,ol,ul,li,a,b,i,em,strong,form,table,tr,th,td,span,input,fieldset,select,option,textarea,label,iframe,header,nav,aside,article,section,button{margin:0;padding:0;border:0;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+
+img{display:block;}
+ol,ul{ list-style:none;}
+i,b,em,strong { font-style:normal; text-decoration:none; font-weight: normal;}
+body{font-family:'Microsoft YaHei','Arial', 'Helvetica', 'sans-serif','simsun','Lucida Grande','Lucida Sans Unicode';color:#656565; background-color:#fff;position:relative;z-index:1;font-size:14px}
+a{text-decoration:none; color:white;font-family:'Microsoft YaHei','Arial', 'Helvetica', 'sans-serif','simsun','Lucida Grande','Lucida Sans Unicode';}
+a:hover{color: #ff5a0b;}
+img{display: inline}
+input{outline: none;}
+ul{list-style-type: none}
+img{border-style: none}
+div{overflow:visible;}
+input::-ms-clear { display: none;outline:none}
+button{font-family: Microsoft yahei;cursor: pointer;outline:none;padding:0px}
+table{border:0;margin:0;border-collapse:collapse;border-spacing:0;}
+table td{padding:0;}
+input{outline:none}
+textarea{resize: none;outline: none;}
+select{outline: none;font-family: Microsoft yahei;text-indent: 1em;}
+.fl{float: left}
+.fr{float: right}
+.claerfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+body{
+    background: #f0f2f7;
+}
+.roll-top{
+    height: 80px;
+    line-height: 80px;
+    background: white;
+    width: 100%;
+}
+.roll-top-info{
+    margin: 0 auto;
+    min-width: 1200px;
+    background: white;
+    height: 80px;
+}
+.roll-top-info>img{
+    margin-top: 15px;
+}
+.roll-top-info-r{
+    float: right;
+    margin-top: 15px;
+    border:1px solid #e0e0e0;
+    width: 135px;
+    height: 50px;
+    border-radius: 3px;
+}
+.roll-top-info-r>img{
+    margin-left: 5px;
+}
+.roll-top-info-r select{
+    width: 80px;
+    height: 32px;
+    margin-top: 10px;
+    display: inline-block;
+    float: right;
+}
+.roll-info{
+    margin: 30px auto 15px;
+    overflow: hidden;
+
+}
+.roll-info>ul>li{
+    float: left;
+    width: 1200px;
+    min-height: 530px;
+    background: white;
+    position: relative;
+    left: 100px;
+}
+.roll-info .roll-info-list div{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 25px 0px;
+}
+.roll-info img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 4px;
+}
+.roll-bottom{
+    display: none;
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+}
+.roll-info-list li{
+    float: left;
+    text-align: center;
+    width: 108px;
+    height: 125px;
+    margin: 15px 25px;
+    cursor: pointer;
+}
+.roll-info-list-b1 img{
+    width: 1200px;
+    height: auto;
+}
+.roll-info-list-b2 img{
+    width: 1200px;
+}
+.roll-info-list-b3 img{
+    width: 1200px;
+}
+.roll-info-list-b4 img{
+    width: 1200px;
+}
+.head-main{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 80px;
+}
+.head-main .folder-out{
+    font-size: 16px;
+}
+.head-main .folder-out i{
+    cursor: pointer;
+}
+.head-main img{
+    margin-top: 15px;
+}

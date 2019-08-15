@@ -1,0 +1,475 @@
+#upload-banner {
+    margin-top: 0;
+
+    background-size: 100% 100%;
+}
+
+.content-div {
+
+    margin: 20px;
+    clear: both;
+}
+
+.content-title {
+    border-left: solid 5px #FF7E00;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 10px;
+    font-family: "Microsoft YaHei";
+    overflow: hidden;
+}
+
+.content-title-hr {
+    background-color: #FF7E00;
+    color: #FF7E00; /* IE6 */
+    /*min-height: 20px;*/
+}
+.file-line{
+    display: inline-block;
+    padding-left: 22px;
+    height: 25px;
+    line-height: 25px !important;
+    margin-right: 5px;
+    margin-left: 15px;
+    float: left;
+    background: url("../../img/K6KT/lian_left.png") no-repeat 1px 6px ;
+}
+.file-line i{
+    float: right;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../../img/K6KT/del_vo.png") no-repeat;
+    margin: 4px 1px 0 5px;
+    cursor: pointer;
+}
+.pagination{
+}
+
+.pagination ul{
+    list-style: none;
+    text-align: center;
+}
+.pagination li {
+    margin: 0 2px;
+    display: inline-block;
+}
+.pagination li a {
+    display:inline-block;
+    /*width: 25px;
+    height: 25px;*/
+    line-height: 25px;
+    cursor: pointer;
+    background: lightgray;
+   /*  color: white; */
+}
+
+.pagination li a:hover {
+    background: #FF7E00;
+}
+
+.pagination li.active a{
+    background: #FF7E00;
+}
+
+.courseware {
+    float: left;
+    margin: 0 4px 20px 10px;
+    width: 103px;
+    height: 52px;
+    position: relative;
+    overflow: visible;
+}
+
+.div-courseware {
+    margin: 0 4px 20px 10px;
+    width: 98px;
+    height: 38px;
+    position: relative;
+    overflow: visible;
+}
+#courseware-list{
+    width: 100%;
+    height: 65px;
+}
+.course-btn{
+    width: 125px;
+    height: 38px;
+    background: #ddd;
+    color: #000;
+}
+
+.course-btn:hover{
+    box-shadow: 0 0 1px #333 inset;
+    background: #fff;
+}
+
+.courseware a.removelink {
+    color: #FF7E00;
+    position: absolute;
+    right: 4px;
+    top: 0px;
+    z-index: 1;
+}
+
+.courseware a.courselink {
+    position: absolute; top: 5px;
+    z-index: 0;
+}
+.courseware a.courselink img{
+    width: 32px;
+    height: 44px;
+}
+
+.courseware .coursename {
+    float: right;
+    width:60px;
+    height: 30px;
+    text-align: left;
+    overflow: hidden;
+    line-height:15px;
+    margin-top: 20px;
+    -webkit-line-clamp: 2;
+}
+
+.question-list-table {
+    width: 100%;
+    font-size: 12px;
+    border: solid 1px #dce0e1;
+    background: #ffffff;
+    text-align: center;
+}
+
+.question-list-table tr {
+    height: 40px;
+    color: gray;
+}
+
+.question-list-table tr > *:first-child {
+    text-indent: 35px;
+    text-align: left;
+}
+
+.question-list-table tr:nth-child(n+2):hover {
+    background: #F1F2F3;
+    color: #FF7E00;
+}
+
+.question-list-table tr:nth-child(n+2):hover > *:first-child {
+    border-left: solid 5px #FF7E00;
+    text-indent: 30px;
+}
+
+.question-list-table th {
+    font-size: 14px;
+    background: #dce0e1;
+}
+
+.question-list-table td {
+    border-bottom: solid 1px #dce0e1;
+}
+
+.upload-area {
+    margin:10px auto;
+    border: dashed 1px #D9DDE3;
+    border-radius: 3px;
+    background: #F6F8FA;
+    height: 200px;
+}
+
+.submit-button {
+    background: #fda616;
+    color: white;
+    cursor: pointer;
+    font: 13px;
+    height: 30px;
+    width: 70px;
+/*     float: right; */
+}
+
+.submit-button:hover{
+    background: #fff;
+    border:1px solid #fda616;
+    color: #fda616;
+}
+
+/*******上传btn*******/
+.uploadify-button{
+    width: 125px !important;
+    height: 38px !important;
+    background: #ddd !important;
+    border-radius: 0 !important;
+    color: #383838 !important;
+    font-size: 14px !important;
+    line-height: 39px !important;
+    font-weight: normal !important;
+    border: none !important;
+    overflow: hidden;
+}
+
+.video-container .video-name {
+    text-align: center;
+    color: #666;
+    margin-top: 5px;
+    word-wrap: break-word;
+    width: 138px;
+    height: 17px;
+    line-height: 17px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.selection-div {
+    overflow: visible;
+    float: left;
+}
+
+.selection-div > span:first-child {
+    color: #FF7E00;
+}
+
+.selection-div > span:nth-child(n+2) {
+    margin-left: 20px;
+}
+
+.inside-dialog {
+    position: fixed;
+    left: 50%;
+    top: 130px;
+    z-index: 50;
+    background: #ffffff;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    display: none;
+}
+
+.dialog-title {
+    background: #ff7e00;
+    overflow: hidden;
+    padding: 10px 10px 5px 10px;
+    color: #ffffff;
+}
+
+input[type="text"], textarea {
+    font:12px Helvetica,Arial,sans-serif;
+}
+
+.upload-icon-div {
+    background: #40A269;
+    color: #ffffff;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    height: inherit;
+    width:90px;
+    height: 40px;
+    float: left;
+}
+
+.upload-icon-div + div {
+    float:left;
+    background: #ffffff;
+    height: 40px;
+}
+
+.upload-icon-div + div + input {
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+}
+
+.loading-div {
+    z-index: 50;
+    position:fixed;
+    left:50%;
+    top:39%;
+    display:none;
+    overflow:visible;
+    color:white;
+}
+
+.ui-slider-horizontal {
+    overflow: hidden !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle{
+    top: 0.1em !important;
+}
+
+.ui-state-default {
+    text-align: center !important;
+}
+
+.ui_timepicker {
+    cursor:pointer;margin:0 5px; text-align: center;
+}
+
+.add-course-class {
+    border-top: 1px solid #ff7e00;
+    padding-top:7px; 
+    margin: 7px 0px 0px 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.add-course-class li {
+    float: left;
+    width: 86px;
+}
+
+.push-accordion {
+    width:900px;
+    margin:30px auto;
+}
+
+.pushtree-split-container {
+    float: left;
+    width: 420px;
+}
+
+.teacher_popup_2 {
+    position: fixed;
+    width: 450px;
+    height: 160px;
+    background-color: #ffffff;
+    left: 50%;
+    top: 50%;
+    margin-top: -95px;
+    margin-left: -225px;
+    border: 1px solid #C3C3C3;
+}
+
+.teacher_popup_I_I {
+    height: 35px;
+    background-color: #D3D3D3;
+    width: 100%;
+    line-height: 35px;
+    overflow: hidden;
+}
+
+.teacher_popup_II_I {
+    color: #000000;
+    margin: 0 0 0 20px;
+}
+
+.teacher_popup_III_I {
+    color: #000000;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 0 0 20px;
+    font-size: 15px;
+}
+
+.teacher_popup_IIIII {
+    float: right;
+    height: 35px;
+
+    font-size: 15px;
+    margin: 0 5px 0 0;
+
+}
+
+.teacher_popup_IIII_I_I {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 5px 20px;
+    border: 1px solid #C3C3C3;
+    border-radius: 3px;
+}
+
+.teacher_popup_IIII_I_I:hover {
+    background-color: #60B75F;
+    color: #ffffff
+}
+
+.teacher_popup_IIII_II_I {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 5px 20px;
+    border: 1px solid #C3C3C3;
+    border-radius: 3px;
+}
+
+.teacher_popup_IIII_II_I:hover {
+    background-color: #60B75F;
+    color: #ffffff
+}
+
+.w-push{
+    float: right;
+}
+.w-push button{
+    width: 80px;
+    height: 38px;
+    border:1px solid #3999d5;
+    line-height: 36px;
+    text-align: center;
+    background: #fff;
+    color: #3999d5;
+}
+.w-tab ul{
+    width: 100%;
+    border-bottom:1px solid #bbb;
+}
+.w-tab li{
+    float: left;
+    width: 98px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border:1px solid #bbbbbb;
+    border-bottom: none;
+    background: #f5f5f5;
+    margin-right: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+}
+.w-tab li a{
+    color: #333;
+}
+.w-tab li.w-cur{
+    background: #fff !important;
+    font-weight: bold;
+    position: relative;
+    top:1px;
+}
+.w-tab li.w-cur a{
+    color: #fb8200 !important;
+}
+.w-main>div{
+    min-height: 90px;
+}
+.w-main>div:nth-last-child(-n+4){
+    display: none;
+}
+.w-wrap{
+    padding:29px 22px 15px 27px;
+    border: 1px solid #bbb;
+    border-top: none;
+}
+
+.ww-push{
+    display: inline-block;
+    padding-left: 20px;
+    height: 16px;
+    line-height: 16px;
+    background:url(../../img/K6KT/w-push.png) no-repeat 0px 0px;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    color: #3999d5;
+    cursor: pointer;
+}
+#courseware-list3{
+    min-height: 65px;
+}

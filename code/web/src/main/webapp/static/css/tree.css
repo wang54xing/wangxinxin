@@ -1,0 +1,84 @@
+.ztree.dir-tree span.button.ico_docu {
+    background-image: url("/img/K6KT/close.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 20px;
+}
+
+.ztree.dir-tree span.button.ico_open {
+    background-image: url("/img/K6KT/open.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 17px;
+}
+
+.ztree.dir-tree span.button.ico_close {
+    background-image: url("/img/K6KT/close.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 20px;
+}
+
+.ztree.dir-tree span.button.virtual_ico_docu, .ztree.dir-tree span.button.virtual_ico_open, .ztree.dir-tree span.button.virtual_ico_close {
+    background-image: url("/img/classSubject.png");
+    width: 22px;
+    height: 20px;
+    margin-right: 2px;
+    vertical-align: top;
+}
+
+.ztree.dir-tree span.button.virtual_ico_open {
+    height: 17px;
+}
+
+/*联盟资源图标*/
+.ztree.dir-tree span.button.league_ico_docu, .ztree.dir-tree span.button.league_ico_open, .ztree.dir-tree span.button.league_ico_close {
+    background-image: url("/img/classSubject.png");
+    width: 22px;
+    height: 20px;
+    margin-right: 2px;
+    vertical-align: top;
+}
+
+.ztree.dir-tree span.button.league_ico_open {
+    height: 17px;
+}
+
+.ztree.dir-tree span.button.switch.bottom_close, .ztree.dir-tree span.button.switch.root_close, .ztree.dir-tree span.button.switch.center_close, .ztree.dir-tree span.button.switch.roots_close {
+    background-image: url("/img/K6KT/right-arrow.png");
+    background-position: 0 0;
+    width: 14px;
+    height: 20px;
+}
+
+.ztree.dir-tree span.button.switch.bottom_open, .ztree.dir-tree span.button.switch.root_open, .ztree.dir-tree span.button.switch.center_open, .ztree.dir-tree span.button.switch.roots_open {
+    background-image: url("/img/K6KT/down-arrow.png");
+    background-position: 0 0;
+    width: 16px;
+    height: 20px;
+}
+
+.ztree.dir-tree li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ztree.dir-tree * {
+    font-size: 16px;
+}
+
+.ztree.dir-tree li span {
+    line-height: 20px;
+}
+
+.ztree.dir-tree li a {
+    height: 20px;
+}
+
+.ztree.dir-tree li {
+    line-height: 20px;
+}
+
+.dir-tree .node-hightlight {
+    border: 1px dashed coral;
+}

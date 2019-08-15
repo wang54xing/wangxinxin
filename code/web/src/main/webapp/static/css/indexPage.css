@@ -1,0 +1,399 @@
+/*#h_content {
+    width: 1000px;
+}
+
+#liebiao {
+    width: 1000px;
+}*/
+#footer div {
+    width: 1000px;
+}
+/*
+#me {
+    float: none;
+}
+
+#me >span {
+    float: right;
+    margin-top: 21px;
+}*/
+
+/*重写nivo*/
+.nivo-controlNav {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-top: 2px;
+}
+
+.nivo-controlNav a.nivo-control {
+    width: 236px;
+    margin: 0;
+    margin-left: 2px;
+    height: 40px;
+    border: none;
+    border-radius: 0px;
+    background-color: #7C7C7C;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+}
+.nivo-controlNav a.nivo-control:first-child {
+    margin-left: 0px;
+}
+.nivo-controlNav a.nivo-control.active {
+    background-color: #F18700;
+}
+.nivo-controlNav a.nivo-control:hover {
+    color: #7C7C7C;
+}
+.nivo-controlNav a.nivo-control.active:hover {
+    color: #fff;
+}
+
+/*首页NEW*/
+body {
+    background-color:#fff;
+    background-image: none;
+    min-width: 1000px;
+}
+
+#main-content {
+    width: 1000px;
+}
+.M_topLeft {
+    width: 712px;
+    float: left;
+    margin-right: 22px;
+}
+.M_topRight {
+    width: 265px;
+    float: left;
+    overflow: hidden;
+}
+.M_jingjiang {
+    padding-top: 28px;
+    clear: both;
+}
+.newinfo-title {
+    line-height: 31px;
+    padding-left: 10px;
+    border:1px solid #dfdfdf;
+    background-color: #f3f3f3;
+    font-size: 15px;
+    font-weight: bold;
+}
+.newinfo-content {
+    height: 155px;
+}
+.newinfo-content,
+.newvideo-container {
+    border-left: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px 0px;
+}
+.M_newVideo {
+    margin-bottom: 32px;
+}
+.newvideo {
+    margin-bottom: 7px;
+    display: block;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+.newvideo:last-child {
+    margin-bottom: 0px;
+}
+.newvideo-img-container {
+    height: 66px;
+    width: 110px;
+    float: left;
+    margin-right: 9px;
+    overflow: hidden;
+}
+.newvideo-img {
+    height: 66px;
+    width: 110px;
+}
+.newvideo > div >div {
+    color: #333;
+}
+.newvideo > div >span {
+    color: #868686;
+    
+}
+.newvideo-date {
+    margin-top: 5px;
+    color: #ffa200;
+}
+.info-line {
+    padding: 0px 10px;
+    display:inline-block;
+    width:243px;
+    background:url(/img/index/point.png) no-repeat 5px 7px;
+    overflow: hidden;
+}
+.info-title {
+    width: 180px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 20px;
+    color: #999;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info-title:hover {
+    color: #f18700;
+}
+.info-date {
+    float: right;
+    color: #f80;
+}
+.M_title {
+    font-size: 20px;
+    color: #333;
+    overflow: hidden;
+}
+.M_title +a {
+    color: #FF6400;
+    font-size: 14px;
+}
+.page-btn {
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.courseVideo-container {
+    margin-top: 18px;
+    margin-bottom: 4px;
+    display : none;
+}
+.courseVideo-container.selected{
+    display : block;
+}
+.course-inline {
+    margin-bottom: 24px;
+}
+.course-video {
+    margin-left: 16px;
+    display: block;
+    font-size: 14px;
+    float: left;
+    width: 166px;
+}
+
+.course-video:first-child {
+    margin-left: 0px;
+}
+
+.course-video-img {
+    width: 166px;
+    height: 99px;
+}
+.course-video-img-container {
+    width:166px;
+    height:99px;
+    overflow: hidden;
+}
+
+.M_college {
+    margin: 23px 0px 30px 0px;
+    overflow: hidden;
+}
+.area-select,
+.style-select,
+.jingjiang-select {
+    float: right;
+    line-height: 20px;
+    font-size: 15px;
+    color: #888;
+}
+.area-border {
+    border-left: 2px solid #c5c5c5;
+    height: 12px;
+    margin: 0px 10px;
+}
+.M_area,.M_style,.M_subject {
+    cursor: pointer;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+.M_area.selected,
+.M_style.selected,
+.M_subject.selected {
+    color: #f18700;
+    border-bottom: 2px solid #f18700;
+}
+
+.college-container {
+    margin-top: 18px;
+    display: inline-block;
+    overflow: hidden;
+}
+.college-prev,
+.college-next {
+    float: left;
+    background-color: #f3f3f3;
+    line-height: 190px;
+    font-size: 25px;
+    color: #999;
+    cursor: pointer;
+    width: 23px;
+    text-align: center;
+}
+.college-inline {
+    float: left;
+    height: 190px;
+    width: 925px;
+    margin-left: 14px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.college-inline .college-info {
+    display: block;
+    float: left;
+    background-color: #fff;
+    height: 170px;
+    padding: 9px 8px;
+    width: 197px;
+    text-align: center;
+    margin-left: 21px;
+    border: 1px solid #DFDFDF;
+}
+.college-inline .college-info:first-child {
+    margin-left: 0px;
+}
+.college-img {
+    width: 196px;
+    height: 115px;
+}
+.free-container {
+    margin-top: 18px;
+}
+.free-course {
+    float: left;
+    margin-left: 14px;
+    display: block;
+}
+.free-course:first-child {
+    margin-left: 0px;
+}
+.free-img {
+    width: 187px;
+    height: 111px;
+}
+.free-img-container {
+    width: 187px;
+    height: 111px;
+    overflow: hidden;
+}
+
+.free-title,.college-name,.course-video-name {
+    margin: 9px 0px 1px 0px;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.free-teacher,.college-ename,.course-video-teacher {
+    font-size: 14px;
+    color: #868686;
+    overflow: hidden;
+}
+
+.simg {
+    width: 248px;
+    height: 149px;
+}
+.M_speech {
+    overflow: hidden;
+}
+.speech-title {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333;
+    font-family: 'microsoft YaHei';
+    font-weight: bold;
+}
+.speech-info {
+    color: #878787;
+    font-size: 12px;
+}
+/*overwrite bxsilder*/
+.bx-wrapper {
+    width: 505px;
+    float: left;
+    margin: 0;
+    max-width: none !important;
+}
+
+.bx-wrapper .bx-viewport {
+    border:  1px solid #eee;
+    width: 498px !important;
+    height: 340px !important;
+}
+
+.bx-wrapper img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+}
+
+#bx-pager {
+    float: left;
+}
+
+#bx-pager a {
+    display: block;
+}
+#bx-pager img {
+    border:  2px solid #fff;
+    width: 120px;
+    height: 80px;
+}
+.bxslider,
+.bxslider li {
+    height: 100%;
+}
+
+#bx-pager a.active img {
+    border:  2px solid #868686;
+}
+#tinymask {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: ghostwhite;
+    z-index: 1500;
+    opacity: 0.2;
+}
+#tinybox {
+    position: fixed;
+    display: none;
+    /*padding: 10px;*/
+    background: #000000 50% 50%;
+    /*border: 10px solid #e3e3e3;*/
+
+    z-index: 2000;
+    opacity: 1;
+}
+.float-close-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}

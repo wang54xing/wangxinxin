@@ -1,0 +1,140 @@
+/* css reset */
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{
+    margin:0;
+    font-weight: normal;
+}
+ol,ul{
+    margin:0; padding:0;
+}
+a{
+    text-decoration: none;
+}
+i,em{
+    font-style: normal;
+    font-weight: normal;
+}
+select,input,button{
+    outline: none;
+    cursor: pointer;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.login-box{
+    width: 460px;
+    height: 460px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -250px 0 0 -230px;
+    text-align: center;
+}
+.login-top{
+    text-align: center;
+}
+.login-top img{
+    width: 255px;
+    margin-bottom: 8px;
+}
+.login-top p{
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 48px;
+    letter-spacing: 1px;
+}
+.login-input{
+    margin-bottom: 42px;
+}
+.login-input div{
+    position: relative;
+}
+.login-input input{
+    width: 360px;
+    height: 58px;
+    border: 1px solid #bebebe;
+    color: #333;
+    text-indent: 18px;
+    line-height: 58px;
+    font-size: 15px;
+    background: none;
+    margin-top: -1px;
+}
+.username-error,.password-error{
+    display: none;
+    color: red;
+    position: absolute;
+    right: -60px;
+    top: 20px;
+}
+.btn{
+    width: 360px;
+    height: 58px;
+    border: 1px solid #3cbe64;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    background: #3cbe64;
+    margin-bottom: 18px;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    background: #33e46a;
+    border: 1px solid #33e46a;
+}
+.login-bot{
+    margin: 0 auto;
+    width: 362px;
+    height: 22px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+.login-bot div{
+    float: left;
+}
+.login-bot .check{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    color: #fff;
+    font-size: 14px;
+    background: #3cbe64;
+    cursor: pointer;
+}
+.login-bot .txt{
+    color: #999;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.login-bot a{
+    float: right;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login-bot a:hover{
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url(/static_new/images/index/bg.png);
+    z-index: -1;
+    background-size: cover;
+    animation: play 10s infinite alternate ease;
+}
+@keyframes play{
+    from { background-position-x: 0;}
+    to { background-position-x: -200px; }
+}

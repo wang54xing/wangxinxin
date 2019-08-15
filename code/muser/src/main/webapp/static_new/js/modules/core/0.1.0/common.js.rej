@@ -1,0 +1,24 @@
+diff a/code/web/src/main/webapp/static_new/js/modules/core/0.1.0/common.js b/code/web/src/main/webapp/static_new/js/modules/core/0.1.0/common.js	(rejected hunks)
+@@ -103,14 +103,20 @@
+             url: url,
+             paramName: 'file',
+             start: function(e) {
+-                $(loadingId).show();
++            	if(loadingId)
++            	{
++                        $(loadingId).show();
++            	}
+             },
+             done: function (e,response) {
+                 //ä½Žç‰ˆæœ¬IEèŽ·å–text/plainçš„æ•°æ®è§£æž
+                 callback.apply(this,arguments);
+             },
+             always: function (e, data) {
+-                $(loadingId).hide();
++            	if(loadingId)
++            	{
++                      $(loadingId).hide();
++            	}
+             }
+         });
+     }

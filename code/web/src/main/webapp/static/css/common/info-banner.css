@@ -1,0 +1,351 @@
+/**
+ * Created by Niu Xin on 14/10/22.
+ * �û���Ϣbanner
+ */
+
+#info-banner-container {
+    padding: 5px 0;
+    background: url(/img/fcteacherbackBig.jpg);
+}
+
+#info-banner-container .info-banner {
+    margin: 0 auto;
+    width: 900px;
+    color: white;
+    /* background: url(/img/bg_teachertop.png) ; */
+    box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+    
+    background: rgba(0, 0, 0, 0.47);
+}
+
+#info-banner-container .info-banner > * {
+    float: left;
+}
+
+#info-banner-container .info-banner > img {
+    width: 124px;
+    height: 124px;
+    margin: 15px 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-sizing: content-box;
+    -ms-box-sizing: content-box;
+}
+
+#info-banner-container .info-banner > div {
+    width: 500px;
+}
+
+#info-banner-container .info-banner div.info > p:first-child {
+    margin-left: 4px;
+    font-size: 20px;
+}
+
+#info-banner-container .info-banner div.info > p:first-child a {
+    top: 5px;
+    position: relative;
+    margin-left: 10px;
+}
+
+#info-banner-container .info-banner div.info > p:first-child + p {
+    margin-top: 10px;
+}
+
+#info-banner-container .info-banner div.info {
+    /* margin-top: 11px; */
+    margin-bottom: 0px;
+}
+
+#info-banner-container .info-banner div.popu > div {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    float: left;
+}
+
+#info-banner-container .info-banner .have-learned {
+    background-color: #AF6731;
+    padding: 5px 10px;
+}
+
+#info-banner-container .info-banner > div span {
+    margin: 0px 5px;
+}
+
+#info-banner-container .info-banner a {
+    color: white;
+    margin-left: 0 !important;
+}
+
+#info-banner-container .info-banner div {
+    overflow: visible;
+}
+
+#info-banner-container .info-banner .info span {
+    font-size: 14px;
+}
+
+#info-banner-container .info-banner span.big {
+    font-size: 20px;
+}
+
+#info-banner-container .info-banner .info > div {
+    margin: 5px 0 10px 5px ;
+}
+
+#info-banner-container .info-banner img {
+    vertical-align: middle;
+}
+
+#info-banner-container .pet{
+	right: 95px;
+	position: absolute;
+	top: 28px;
+}
+
+#info-banner-container .pet > div {
+    width: 130px;
+    height: 140px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: contain;
+}
+
+#info-banner-container .pet .pet-level-1 {
+    background-image: url('/img/tree-1.png');
+}
+#info-banner-container .pet .pet-level-2 {
+    background-image: url('/img/egg.png');
+}
+#info-banner-container .pet:hover + *.change-name {
+    display: inline-block;
+}
+
+#info-banner-container .pet-name {
+    overflow: hidden;
+    font-size: 16px;
+    position: absolute;
+    right: 100px;
+	bottom: 6px;
+	text-shadow: 2px 0 5px #000;
+	width: 140px !important;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+#info-banner-container .input-name{
+    width: 144px;
+    font-size: 14px;
+    padding: 5px;
+    position: absolute;
+    right: 90px;
+    bottom: 6px;
+    display: none;
+    color: #333;
+}
+#info-banner-container .change-name {
+    position: absolute;
+    bottom:33px;
+    right: 110px;
+    text-decoration: underline;
+    font-size: 15px;
+    display: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#info-banner-container .change-name:hover {
+    display: inline-block;
+}
+
+#info-banner-container .user-exp {
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    border: none !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0px !important;
+}
+#info-banner-container .exp-level{
+    position: absolute;
+    bottom: 53px;
+    right: 32px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#info-banner-container .exp-title{
+    position: absolute;
+    bottom:37px;
+    right: 23px;
+    font-size: 15px;
+    margin: 0 !important;
+}
+#info-banner-container .exp-number{
+	position: absolute;
+	bottom: 19px;
+	right: 14px;
+	font-size: 14px;
+	overflow: hidden;
+	text-align: center;
+	width: 60px !important;
+}
+#info-banner-container .exp-number span {
+    margin: 0px !important;
+}
+#info-banner-container .help-score{
+    position:absolute;
+    /* z-index:100; */
+    background: url(/img/howto.png) no-repeat 0 50%;
+    border-radius: 4px;
+    padding: 5px 8px 8px 20px;
+    top: 2px;
+    right: 8px;
+    font-size:13px;
+}
+#info-banner-container a.help-score:hover {
+    text-decoration: underline;
+}
+#info-banner-container .control-bar {
+    margin: 15px 5px;
+    overflow: auto !important;
+	max-height: 80px;
+}
+#info-banner-container .control-bar .item {
+    border-radius: 4px;
+    box-sizing: content-box;
+    float: left;
+    font-size: 14px;
+    min-width: 71px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #D6EAE1;
+    color:#000;
+    padding: 0 7px;
+}
+#info-banner-container .control-bar .item.active {
+    background-color: #EE6263;
+    color:#fff;
+}
+
+#info-banner-container .control-bar .item-gray {
+    color:#555963;
+}
+
+#info-banner-container .user-help{
+    border: 1px solid;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.class_item.active{
+    background-color: #EE6263;
+    color:#fff;
+}
+.class_item {
+	float: left;
+	min-width: 93px;
+	color: #555963;
+	font-size: 14px;
+	padding: 6px 0px;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 10px;
+	background-color: #D6EAE1;
+	border-radius: 4px;
+	text-shadow: none;
+}
+#choosenPet{
+	text-align:center;
+}
+#choosenPet img{
+	max-height: 101px;
+	margin-left: 20px;
+}
+#arrow{
+	border-width: 8px 10px;
+	border-color: transparent transparent rgba(200,120,120,0.90) rgba(200,120,120,0.90);
+	left: 60px;
+	top: -14px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-style: solid;
+	overflow: hidden;
+	position: absolute;
+}
+#pettalk_area{
+	background-size: cover;
+	position: absolute;
+	right: 10px;
+	top: 95px;
+	padding: 0px 8px 2px;
+	width: 200px !important;
+	z-index: 100;
+	background: #f38587;
+	border-radius: 5px;
+	max-height: 70px;
+	min-height: 58px;
+	background: rgba(200,120,120,0.90);
+}
+#msgclose{
+	cursor: pointer;
+	display: block;
+	text-align: right;
+}
+#talkmsg{
+	display: block;
+}
+#look_ad{
+	position: absolute;
+	right: 201px;
+	top: 55px;
+}
+.getit{
+	float: right;margin-right: 20px;
+}
+.cancel{
+	background: #bbb;
+}
+.cancel:hover{
+	background: #aaa;
+}
+#pricetip{
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb( 22, 87, 0 );
+	border-radius: 8px;
+	background-color: rgba( 80, 187, 30,0.5 );
+	padding: 10px 15px;
+	line-height: 2;
+	margin-left: 8px;
+}
+.ad_title{
+	color: rgb(255,126,0);
+	font-weight: bolder;
+	font-size: 14px;
+	line-height: 2;
+}
+.ad_item_end{
+	height:18px;
+}
+.ad_item{
+	font-size: 13px;
+	font-family: "Microsoft YaHei";
+	line-height: 1.81;
+}
+.ad_descript{
+    line-height: 1.81;
+}

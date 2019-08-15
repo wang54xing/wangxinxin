@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+#fullbg {
+    background-color: gray;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    filter: alpha(opacity = 50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    width: 100%; height: 100%; display: none;
+}
+
+#dialog {
+    /*background-color:#fff;
+border:5px solid rgba(0,0,0, 0.4);
+ */
+    width: 344px;
+    left: 50%;
+    margin: 0 0 0 -120px;
+    padding: 1px;
+    position: fixed !important; /* 浮动对话框 */
+    position: absolute;
+    top: 168px;
+    z-index: 50;
+    border-radius: 10px;
+    display: none;
+}
+
+.dialog {
+    width: 344px;
+    left: 50%;
+    margin: 0 0 0 -120px;
+    padding: 1px;
+    position: fixed !important; /* 浮动对话框 */
+    position: absolute;
+    top: 168px;
+    z-index: 50;
+    border-radius: 10px;
+    display: none;
+}
+
+.dialog div.title {
+    margin: 0;
+    background: #e0e0e0 url(../img/alert-title-user.png) no-repeat 13px 6px;
+    line-height: 42px;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 10px;
+    height: 42px;
+    border-bottom: 2px solid #33ade1;
+    position: relative;
+    overflow:hidden;
+}
+
+.dialog span.title-login {
+    background: url(../img/alert-title-user.png) no-repeat 13px 6px;
+    padding-left: 50px;
+}
+
+.dialog div.title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dialog .clostBtn {
+    position: absolute;
+    top: 13px;
+    right: 22px;
+}
+
+.dialog .dialog-content {
+    background: #fff;
+    padding: 24px;
+    font-size: 14px;
+}
+
+.dialog .dialog-child {
+    width: 236px;
+    padding: 0 30px;
+    background: #d8f1fe;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 12px;
+    color: #7c7d7d;
+}
+
+.dialog .dialog-child p {
+    line-height: 22px;
+}
+
+.dialog table {
+    width: 100%;
+    text-align: left;
+}
+
+.dialog .dialog-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dialog .dialog-title-user {
+    font-weight: normal;
+    font-size: 12px;
+    color: #686868;
+}
+
+.dialog .no-titleIcon {
+    background-image: none !important;
+    padding-left: 22px !important;
+}
+
+.dialog .input-div {
+    height: 48px;
+    border: 2px solid #dcdcdc;
+    font-size: 12px;
+    line-height: 46px;
+    padding-left: 14px;
+    margin-bottom: 26px;
+    color: #5e5b5b;
+    overflow:hidden;
+}
+
+.dialog .input {
+    width: 190px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 22px;
+}
+
+.dialog .loginNameInput {
+    background: url(../img/login-u-bg.png) no-repeat 100% 14px
+}
+
+.dialog .passwordInput {
+    background: url(../img/login-p-bg.png) no-repeat 100% 14px
+}
+
+.dialog .dialog-submit a {
+    color: #5e5b5b;
+}
+
+#prompt-div {
+    background-color: rgba(128,128,128,0.3);
+    /*opacity: 1;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /*filter: alpha(opacity = 50);*/
+    /*-moz-opacity: 0.5;*/
+    /*-khtml-opacity: 0.5;*/
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    font-size: 14px;
+    display: none;
+}
+
+.message-box {
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 0px 10px #666;
+}
+
+.message-box-title {
+    background: lightgray;
+    overflow: visible;
+    padding: 10px 20px 10px 20px;
+}
+
+.message-box-title + div {
+    padding: 20px;
+    text-align: center;
+    overflow: visible;
+}
+
+.submit-button {
+    background: #33ADE1;
+    color: white;
+    cursor: pointer;
+    font: 13px;
+    height: 30px;
+    width: 70px;
+    border: 0;
+}

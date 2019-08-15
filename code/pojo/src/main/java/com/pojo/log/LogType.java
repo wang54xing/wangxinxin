@@ -1,0 +1,38 @@
+package com.pojo.log;
+
+public enum LogType {
+
+	CLICK_LOGIN(1),
+    CLICK_SEARCH(2),
+    CLICK_LOOUT(3),
+    VISIT_COURSE(4),
+    VISIT_COURSE_VIDEO_BEGIN(5),
+    VISIT_COURSE_VIDEO_END(6),
+    CLICK_COURSE_STAR(7),
+    SEND_COURSE_COMMENT(8),
+    VISIT_UNIVERSITY(9),
+    VISIT_UNIVERSITY_VIDEO_BEGIN(10),
+    VISIT_UNIVERSITY_VIDEO_END(11),
+    CLICK_UNIVERSITY_STAR(12),
+    SEND_UNIVERSITY_COMMENT(13),
+    VISIT_TEACHER(14),
+    CLICK_EXAM_BEGIN(15),
+    CLICK_EXAM_FINISH(16),
+    CLICK_FAVORITE(17),
+    CLICK_ADDCART(18),
+    CLICK_BUY(19),
+    CLICK_PAY(20),
+    VISIT_COURSE_VIDEO_TRIAL_END(21),
+    VIEW_CLOUD_VIDEO(22), ;
+
+	private int code;
+
+	private LogType(int code) {
+		this.code = code;
+	}
+
+	public int getCode() {
+		return code;
+	}
+
+}

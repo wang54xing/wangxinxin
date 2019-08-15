@@ -1,0 +1,264 @@
+.main-wrap{
+	margin: 0px;
+	padding:0px;
+	background:#fff;
+}
+.main-container{
+	width:770px;
+	margin:0 auto;
+}
+.course-title{
+  font-size: 30px;
+  font-family: "Microsoft YaHei";
+  color: rgb( 51, 51, 51 );
+  padding: 30px 0;
+  line-height: 36px;
+}
+.course-cover{
+	float:left;
+	width:49%;
+}
+.main-info{
+	float:left;
+	margin-left: 1%;
+	color:#fff;
+	width:50%;
+}
+.course-price{
+	background:#f8654e;
+	height: 65px;
+	line-height: 65px;
+	color: #fff;
+}
+.course-price > * {
+	float:left;
+}
+.buybtn{
+	background:url(/img/buy.png) no-repeat;
+	width: 160px;
+	height: 45px;
+	margin-top: 13px;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: 'Microsoft YaHei';
+	line-height: 1.5;
+	/* position: absolute;
+	right: 512px; */
+	float:right;
+}
+.buybtn:hover{
+	background:url(/img/buy.png) no-repeat;
+	box-shadow: 3px 3px 3px #fff;
+}
+.pricelabel{
+	padding: 0 10px;
+	font-size: 22.158px;
+	font-family: "Microsoft YaHei";
+}
+.course-content{
+	padding: 21px 0;
+	border: 1px solid #d5d5d5;
+}
+.content{
+	float: left;
+	width: 33%;
+	text-align: center;
+	height: 158px;
+}
+.include{
+	background:url(/img/include_bg.png) no-repeat;
+	background-position: center;
+}
+.validate{
+	background:url(/img/validate_bg.png) no-repeat;
+	background-position: center;
+}
+.course-teach{
+	background:url(/img/teach_bg.png) no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+.course-desc{
+	margin-top: 115px;
+	/*padding: 0 20px;*/
+	width: 98px;
+}
+.detail-info{
+	width: 68%;
+	float: left;
+	padding: 10px 0;
+}
+.recommend-container{
+	width: 30%;
+	float: left;
+	margin-left:2%;
+	margin-top: 10px;
+}
+.title-bar{
+	/* padding-top: 15px; */
+	z-index: 100;
+}
+.title-btn{
+	border: 1px solid #d5d5d5;
+	padding: 4px 12px;
+	margin:0px;
+	color: rgb( 153, 153, 153 );
+	font-size: 14px;
+    font-family: "Microsoft YaHei";
+    background:none;
+    width:120px;
+    line-height: 1.714;
+    height:42px;
+    border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.title-btn:hover{
+	background:none;
+}
+.selected{
+	color: rgb( 249, 100, 78 );
+	border-top: 3px solid #fb624d;
+	border-bottom: 0;
+	border-radius: 3px;
+}
+.instruct-container{
+	border: 1px solid #d5d5d5;
+	margin-top: -1px;
+	padding: 18px;
+	border-top: 0;
+}
+/* .borderbt-common{
+	border-bottom: 1px solid #d5d5d5;
+} */
+/* .borderbt-org{
+	border-bottom: 2px solid #ff8a00;
+} */
+.title{
+	 font-size: 18px;
+	 font-family: "Microsoft YaHei";
+	 line-height: 1.333;
+	 padding-top: 10px;
+	 background: url(/img/divisionline.png) no-repeat left bottom;
+	 padding-bottom: 5px;
+	 color: rgb( 249, 100, 78 );
+}
+.courseinfo{
+	padding:18px 0;
+	/* overflow:hidden; */
+}
+.recommend-title{
+	height: 42px;
+	line-height: 42px;
+	padding-left: 18px;
+}
+.recommend-list{
+	border: 1px solid #d5d5d5;
+	border-top: 0;
+}
+.recommend-item > div{
+	float:left;
+}
+.recommend-cover{
+	width: 120px;
+	height: 73px;
+}
+.recommend-item{
+	padding: 10px;
+	border-bottom: 1px dashed #d5d5d5;
+    overflow: auto;
+}
+.recmd-price{
+	font-size: 18.317px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 255, 68, 0 );
+	line-height: 1.31;
+}
+.recmd-buy{
+	font-family: "Microsoft YaHei";
+	background: #fc4300;
+	margin-top: 3px;
+	border-radius: 4px;
+}
+.overdue{
+	font-family: "Microsoft YaHei";
+	background: #bbb;
+	margin-top: 3px;
+	border-radius: 4px;
+}
+.overdue:hover{
+	background: #aaa;
+}
+.recmd-buy:hover{
+	background: #f8654e;
+}
+.sale-coursename{
+	overflow: hidden;
+	font-size: 14.381px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 51, 51, 51 );
+    line-height: 1.669;
+	float: left;
+	width: 65%;
+	padding: 4px 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sale-price{
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 255, 68, 0 );
+	line-height: 1.298;
+	clear: both;
+	overflow:hidden;
+	width: 30%;
+	text-align: right;
+	display: inline-block;
+	margin-top: 5px;
+}
+.location{
+	background: url(/img/location.png) no-repeat 0;
+	padding-left: 23px;
+	font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 142, 142, 142 );
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.course-ownner{
+	background:url(/img/who_icon.png) no-repeat 0;
+	padding-left: 23px;
+	font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 142, 142, 142 );
+    line-height: 1.6;
+}
+.subject-container {
+	cursor: pointer;
+	width: 178px;
+	margin-right: 1%;
+	padding: 0 0 6px 0;
+	border: 1px solid #ddd;
+	margin-bottom: 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.subject-container:hover {
+	border: 1px solid #FF7B00;
+}
+.wordbreak{
+	word-wrap: break-word;
+	white-space: normal;
+}
+.name_price_ctn{
+	border-bottom: 1px solid #ddd;
+	height: 35px;
+	overflow: hidden;
+}
+.deal-success{margin-left: 12px;padding-top: 18px;}
+.deal-success>span{display:block;height:20px;line-height:20px;}

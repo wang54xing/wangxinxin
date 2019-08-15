@@ -1,0 +1,27 @@
+diff a/code/web/src/main/webapp/static_new/js/modules/bxgl/0.1.0/bxgl.js b/code/web/src/main/webapp/static_new/js/modules/bxgl/0.1.0/bxgl.js	(rejected hunks)
+@@ -121,6 +121,25 @@
+             Common.dialog($('#editbxsqId'));
+             return false;
+         })
++//**********************************************************************************************************************************
++        //ä¸ŠæŠ¥è‡³æ•™è‚²å±€å¯¹è¯æ¡†çš„æ˜¾ç¤ºæ–¹æ³•
++        $(document).delegate('.icon-ups','click',function(){
++        	var rcDetail;
++			for(var i=0;i<queryManageCatch.repairData.length;i++){
++				if(queryManageCatch.repairData[i].id == $(this).parent().parent().attr("flag")){
++					rcDetail = queryManageCatch.repairData[i];
++				}
++			}
++			//åˆå§‹åŒ–å†…éƒ¨æ‰€æœ‰æ ‡ç­¾å†…å®¹å¹¶å¡«å……å½“å‰éœ€è¦ç¼–è¾‘çš„æŠ¥ä¿®æ¡ç›®
++			$("#editUpPerson").html(userObj.userName);
++			$("#editUpPlace").html(rcDetail.repairPlace);
++			$("#editUpPhone").val(rcDetail.phone);
++			$("#editUpType").html(rcDetail.repairType);
++			$("#editUpContent").html(rcDetail.repairContent);
++			$("#editUpPerson").data("flag",rcDetail.id);
++			bxgl.dialog($('#editUpId'));
++        })
++        
+         //ç»“æžœå¡«å†™æŒ‰é’®ç»‘å®šäº‹ä»¶
+         $(document).delegate('.result-view, .icon-result','click',function(){
+         	var rDetail;

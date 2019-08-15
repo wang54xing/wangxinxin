@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: phprpc-client:phprpc-client:3.0.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/phprpc-client/phprpc-client/3.0.2/phprpc-client-3.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/phprpc-client/phprpc-client/3.0.2/phprpc-client-3.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/phprpc-client/phprpc-client/3.0.2/phprpc-client-3.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

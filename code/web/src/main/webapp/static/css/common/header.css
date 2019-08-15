@@ -1,0 +1,311 @@
+/*翻转课堂页头*/
+#flipped_headr {
+    background: none repeat scroll 0% 0% #FF7900;
+    height: 110px;
+    overflow: hidden;
+}
+
+#flipped_headr * {
+    box-sizing: content-box;
+}
+
+#flipped_headr span {
+    display: inline-block;
+}
+
+#flipped_headr_top {
+    height: 70px;
+    background: none repeat scroll 0% 0% white;
+    border-bottom: 2px solid #807C7D;
+    line-height: 75px;
+    overflow: hidden;
+}
+
+#flipped_headr_bottom {
+    height: 33px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 33px;
+    overflow: hidden;
+}
+
+#flipped_headr_bottom span {
+    color: #808080;
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+
+#flipped_headr_bottom span a {
+    color: #808080;
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+
+#flipped_headr_bottom span.FloatC {
+    float: right;
+}
+
+#flipped_logo {
+    float: left;
+    margin-top: 13px;
+    width: 254px;
+    height: 51px;
+    background-image: url("/img/logofz211.png");
+    background-repeat: no-repeat;
+}
+
+#flippeddngj_logo {
+    float: left;
+    margin-top: 13px;
+    width: 335px;
+    height: 51px;
+    background-image: url("/img/logofz214.png");
+    background-repeat: no-repeat;
+}
+
+#fz_phone_geo {
+    overflow: hidden;
+    background: url('/img/phone.jpg') no-repeat scroll left center transparent;
+    width: 160px;
+    line-height: 60px;
+    float: left;
+}
+
+#fz_phone_geo span {
+    margin-top: 20px;
+    margin-left: 35px;
+    display: inline;
+    font-weight: bold;
+    color: #989898;
+    font-size: 14px;
+}
+
+#fz_h_cart {
+    overflow: hidden;
+    height: 70px;
+}
+
+
+#mid {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fz_liebiao {
+    width: 900px;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+#fz_me {
+    width: auto;
+    height: auto;
+    float: right;
+    margin-top: -15px;
+    overflow: hidden;
+}
+
+#fz_me a {
+    margin-left: -8px;
+    color: #FFF;
+}
+
+.fz_xuanxiang {
+    text-align: center;
+    font: 16px/70px Microsoft Yahei;
+    width: 220px;
+    cursor: pointer;
+    border-right: 1px solid #FF8C25;
+}
+
+.fz_xuanxiang:hover {
+    background: none repeat scroll 0% 0% #6E6E6E;
+    border-top: 3px solid #FFF;
+    height: 67px;
+    line-height: 64px;
+}
+
+.xuanxiang.current {
+    background: #6e6e6e;
+    border-top: 3px solid white;
+    height: 67px;
+    line-height: 64px;
+}
+
+.xuanxiang:hover {
+    background: #6e6e6e;
+    border-top: 3px solid white;
+    height: 67px;
+    line-height: 64px;
+}
+
+.xuanxiang {
+    text-align: center;
+    font: normal 16px Microsoft Yahei;
+    width: 85px;
+    cursor: pointer;
+    line-height: 70px;
+    border-right: 1px solid #FF8C25;
+}
+
+#message {
+    background: url('/img/nomessage.png') no-repeat;
+    float: right;
+    width: auto;
+    height: 25px;
+    overflow: hidden;
+}
+
+#sl {
+    font-size: 9px;
+    font-family: "lucida grande", "lucida sans unicode", 'Microsoft YaHei', tahoma, verdana, arial, sans-serif;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0px;
+    margin-left: 15px;
+    float: left;
+    position: relative;
+    top: -3px;
+    left: -0px;
+}
+
+/*页脚*/
+#footer {
+    width: inherit;
+    clear: both;
+    background-color: rgb(0, 0, 0);
+    opacity: .7;
+    filter: alpha(opacity=70);
+    height: 40px;
+    min-width: 900px;
+    color: white;
+    line-height: 40px;
+
+}
+
+#footer div {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer a {
+    color: white;
+    cursor: pointer;
+}
+
+#footer a:hover {
+    color: red;
+}
+
+#footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#browser-updater {
+    display: none;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 99999999;
+}
+
+.browser-updater-wrapper {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    height: 45px;
+    background-color: #8e8e8e;
+}
+
+#browser-updater p {
+    line-height: 45px;
+    text-indent: 30px;
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+
+#browser-updater p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#browser-updater p a:hover {
+    text-decoration: none;
+}
+
+.browser-updater-chrome {
+    padding-left: 20px;
+    background: url(/img/browser.png) no-repeat -120px 0;
+}
+
+.browser-updater-close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #fff;
+    line-height: 45px;
+    font-size: 30px;
+}
+
+/*播放器*/
+.player-container {
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-415px;
+    margin-top:-240px;
+    z-index: 1000;
+    overflow: visible;
+    display: none;
+    background-color: white;
+    box-shadow: 0 10px 25px #000;
+    box-sizing: content-box;
+    border-radius: 4px;
+    padding:15px;
+}
+.player-container * {
+    overflow: visible;
+}
+
+.player-div {
+    background: #000;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.player-close-btn {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 8040;
+    background-image: url('/plugins/fancyBox/fancybox_sprite.png');
+}
+
+.dialog-bg {
+    background-color: #000;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    width: 100%; height: 100%; display: none;
+}

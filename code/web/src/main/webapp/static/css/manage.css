@@ -1,0 +1,615 @@
+html, body {
+    background:#fff !important;
+}
+body {
+    min-width: 1000px !important;
+}
+/*div {//2015-7-20 10:44 guojing
+    overflow: hidden !important;
+}*/
+#mid {
+    width: 1000px !important;
+}
+#fz_liebiao {
+    width: 1000px !important;
+}
+.main-container {
+    margin: 0 auto;
+}
+.manage-left-container {
+    width: 190px;
+    background-color: #F0F2EE;
+    border-left: 2px solid #779554;
+    padding-top: 10px;
+    float: left;
+}
+.manager-img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+}
+.manager-name {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #585858;
+}
+.manager-info {
+    list-style: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+.manager-info >li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    font-size: 14px;
+    color: #585858;
+}
+.number-info {
+    font-size: 22px;
+    font-family: 'microsoft YaHei';
+    overflow: hidden;
+    margin-bottom:3px;
+}
+.manage-select >li {
+    line-height: 40px;
+    cursor: pointer;
+    color: #585858;
+    font-size: 14px;
+}
+.manage-select >li div {
+    margin-left: 25px;
+    padding-left: 35px;
+    border-top:1px solid #C8CEC1;
+    display: block;
+}
+.manage-select >li:first-child div {
+    border-top: none;
+}
+.manage-select >li.active {
+    background-color: #779554 !important;
+}
+.manage-select >li.active div {
+    border-top: none;
+}
+.manage-select >li.active + li div {
+    border-top:none;
+}
+
+.manage-right-container, #angular-right-container {
+    float: left;
+    padding: 10px;
+    width: 770px;
+}
+.right-title-bar {
+    width: 100%;
+    background-color: #F4F6F3;
+    font-size: 14px;
+    line-height: 33px;
+    padding: 30px 0px;
+}
+.title-info {
+    float: left;
+    margin-left: 20px;
+    color: #545454;
+}
+.title-school-name,.title-school-level {
+    float: left;
+    color: #545454;
+}
+.title-edit {
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #545454;
+    cursor: pointer;
+}
+.title-download,
+.title-upload,
+.title-update,
+.title-resetpassword {
+    float: right;
+    padding: 8px 0px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 15px;
+    border-radius: 2px;
+    line-height: normal;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.title-resetselectpwd {
+    float: right;
+    padding: 8px 0px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 15px;
+    border-radius: 2px;
+    line-height: normal;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    background-color: #FF7900;
+}
+.upload-user-info {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.title-update {
+    background-color: #97BB6D;
+}
+.title-download {
+    background-color: #FFBE0F;
+}
+.title-upload {
+    background-color: #97BB6D;
+}
+.title-resetpassword {
+    background-color: #FF7900;
+}
+.list-container {
+    width: 100%;
+    padding: 10px 25px 0px 25px;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.manage-right-container .list-container {
+    display: none;
+}
+.list-title {
+    color: #779554;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    float:left;
+}
+.list-ul>li {
+    line-height: 30px;
+    color: #545454;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+.list-ul>li >* {
+    float: left;
+}
+.list-ul .list-content {
+    background-color: #F6F7F4;
+    font-size: 14px;
+    width: 500px;
+    box-sizing: border-box;
+    height: 30px;
+    overflow: visible;
+    cursor: pointer;
+}
+.open-close-class, .change-category{
+    font-size: 14px;
+    font-family:Microsoft YaHei ;
+    background-color: #ff830a;
+    color: #ffffff;
+    padding: 1px 10px;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+.list-ul .list-content:hover {
+    border: 1px solid #b8e08a;
+}
+.grade-list .list-content,
+.class-list .list-content {
+    cursor: pointer;
+}
+.list-ul .list-content >span {
+    margin-left: 20px;
+}
+.list-ul .list-content >span:first-child {
+    font-weight: bold;
+    margin-left: 30px;
+}
+.grade-manager-name {
+    margin-left: 0px !important;
+}
+.list-edit {
+    line-height: 30px;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+.list-delete {
+    line-height: 30px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.list-li{
+    line-height: 30px;
+    margin-left: 25px;
+    height: 30px;
+}
+.list-change-class {
+    margin-top: 5px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+.list-interest-change,.list-add-class,.list-add-subject,.list-add-moral,
+.list-add-grade, .list-add-interest, .list-add-teacher, .list-add-news {
+    background-color:#e45b91;
+    padding: 5px 13px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    float:right;
+    margin-right:20px;
+    color:#fff;
+    border-radius: 4px;
+}
+
+.batch-export {
+    background-color:#e45b91;
+    padding: 5px 13px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    float:right;
+    margin-right:20px;
+    color:#fff;
+    border-radius: 4px;
+}
+
+.list-class-add {
+    text-align: right;
+    background-color:#e45b91;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #fff;
+	/*clear: left;*/
+	float: right;
+	padding: 5px 13px;
+	border-radius: 4px;
+	margin-right: 70px;
+}
+.list-interest-change:hover, .list-add-class:hover,.list-add-subject:hover,.list-add-moral:hover,
+.list-add-grade:hover, .list-add-interest:hover, .list-add-teacher:hover, .list-add-news:hover {
+	background-color:rgb(200, 91, 145);
+}
+/* .list-add-teacher {
+    float: right;
+    color:#D30B5A;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -38px;
+    margin-right: 160px;
+} */
+.change-stu-name {
+    margin-left: 10px;
+}
+
+.modal-bg {
+    position: fixed;
+    top: 0px; 
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    filter:alpha(opacity=40); 
+    -moz-opacity:0.4; 
+    z-index: 100;
+    display: none;
+}
+.edit-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    display: none;
+    overflow: auto !important;
+}
+.edit-container div{
+    overflow: auto;
+}
+/*.select-teacher-list {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #A4A4A4;
+    width: 268px;
+    font-size: 14px;
+    line-height: 25px;
+    z-index: 102;
+    display: none;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+.select-teacher-list li {
+    padding-left: 10px;
+    cursor: pointer;
+}
+.select-teacher-list li:hover {
+    background-color: #35A0FF;
+    color:#fff;
+}
+.select-teacher-list b {
+    color:#00f;
+}*/
+.edit-info-container {
+    display: none;
+    width: 500px;
+    background: white;
+    margin: 50px auto 0;
+}
+
+.edit-commit-btn-container {
+    background: #fff;
+    width: 500px;
+    margin: 0 auto 50px;
+}
+
+.change-class-select {
+    margin-left: 10px;
+    border: 1px solid #A4A4A4;
+    border-radius: 5px;
+    padding: 7px 10px;
+    width: 90px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.edit-title-bar {
+    border-bottom: 2px solid #779554;
+    line-height: 40px;
+    width: 100%;
+}
+.edit-title-bar >div {
+    color: #779554;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 20px;
+    float: left;
+}
+.edit-title-bar >i {
+    float: right;
+    line-height: 40px;
+    padding-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.edit-form {
+    padding: 10px;
+}
+.edit-input-group {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #545454;
+}
+.edit-input-group textarea{
+    width: 480px!important;
+}
+.edit-input-group >span:first-child {
+    font-weight: bold;
+    width: 70px;
+    text-align: right;
+}
+.edit-class-number {
+    margin-left: 0px !important;
+    width: 224px !important;
+}
+.edit-input-group > input[type="text"],
+.edit-input-group > input[type="number"],
+.edit-input-group > select.edit-info-select,
+.edit-input-group > textarea,
+.edit-add-select > select  {
+    margin-left: 10px;
+    border:1px solid #A4A4A4;
+    border-radius: 5px;
+    padding: 7px 10px;
+    width: 270px;
+    font-size: 14px;
+    box-sizing:border-box;
+    height: 33px!important;
+}
+.edit-input-group > input[type="radio"] {
+    margin-left: 10px;
+}
+.reset-student-password, 
+.reset-parent-password{
+    padding: 7px 0px;
+    background-color: #FF5555;
+    margin-left: 83px;
+    width: 130px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.reset-password.success {
+    background-color: #CFCFCF;
+}
+.belong-grade {
+    font-weight: bold;
+    width: 70px;
+    text-align: right;
+    float: left;
+    margin-right: 10px;
+}
+.checkbox-inline {
+    width: 80px;
+    float: left;
+    margin-bottom: 10px;
+}
+.edit-input-group >input[type="checkbox"] {
+/*     float: left; */
+    width: 20px;
+}
+.edit-commit-btn {
+    float: right;
+    padding: 7px 0px;
+    width: 100px;
+    text-align: center;
+    background-color: #FFBE0F;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.edit-add-select {
+    margin-left: 64px;
+    margin-top: 10px;
+}
+.delete-subject {
+    color: #D30D5B;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.edit-add-subject {
+    margin-left: 74px;
+    margin-top: 10px;
+    color: #D30D5B;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.input-success-alert {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 14px;
+    color: #545454;
+}
+.select-time {
+    width: 90px;
+    border: 1px solid #A4A4A4;
+    padding: 6px;
+    box-sizing:border-box;
+    border-radius: 4px;
+}
+.select-time:first-child {
+    padding: 7px 5px;
+}
+
+.edit-error {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #f00;
+    font-weight: bold;
+}
+.reset-password-form{
+    display: none;
+}
+
+.edit-select-time {
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.edit-select-time ul {
+    margin-bottom: 3px;
+    display: inline-block;
+}
+.edit-select-time li{
+    border: 1px solid #eee;
+    border-radius: 2px;
+    margin: 0px 2px;
+    float: left;
+    width: 50px;
+}
+.select-time-day li {
+    background-color: #EEEEEE;
+}
+.select-time-lesson li {
+    cursor: pointer;
+}
+.select-time-lesson .selected{
+    border: 1px solid #FBD937;
+    background: url(/img/K6KT/check.png) no-repeat 35px 5px;
+}
+.edit-interest-opentime,.edit-interest-closetime {
+    border: 1px solid #A4A4A4;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+/*分页*/
+.page-paginator {
+    width: 100%;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    display: none;
+}
+.page-index span {
+    padding: 3px 8px;
+    color: #838383;
+    border-radius: 4px;
+    border: 1px solid #838383;
+    background-color: #F6F7F6;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.first-page,.last-page {
+    padding: 3px 15px;
+    color: #838383;
+    border-radius: 4px;
+    border: 1px solid #838383;
+    background-color: #F6F7F6;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.page-paginator span.active {
+    background-color:#E6E6E6;
+    color: #779554;
+}
+.user-stuuser,
+.user-paruser,
+.user-techuser {
+	font-weight: bold;
+    font-size: 14px;
+    color: darkgray;
+}
+.manage-hover{
+    border-bottom: 2px solid #769753;
+    color:#769753 ;
+    height: 34px;
+    display: inline-block;
+    width: 80px;
+    text-align: center
+}
+.manage-tianjia{
+    height: 34px;
+    display: inline-block;
+    width: 80px;
+    text-align: center
+}
